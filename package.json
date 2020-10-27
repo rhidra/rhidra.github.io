@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export -o docs &&git checkout -- docs/.nojekyll && git add docs && git commit -m \"auto: regen site\" && git push origin main"
   },
   "dependencies": {
     "next": "9.5.5",
