@@ -7,7 +7,7 @@ export default function Home() {
       <Box bg="gray.700" w="100%" h="70vh" pt={[5, 100]} pl={[5, 100]} pr={5}>
         <Flex direction={['column', 'row']}>
           <Center mb={[6, 0]}>
-            <Image src="https://via.placeholder.com/150" alt="Avatar" borderRadius="full" boxSize="150px" mr={[0, 6]}/>
+            <Image src="img/photo.jpg" alt="Avatar" borderRadius="full" boxSize="150px" mr={[0, 6]}/>
           </Center>
 
           <Heading color="white" textAlign={['center', 'left']} fontSize={['2xl', '4xl']}>
