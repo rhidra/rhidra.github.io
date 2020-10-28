@@ -9,6 +9,7 @@
     "deploy": "next build && next export -o docs &&git checkout -- docs/.nojekyll && git add docs && git commit -m \"auto: regen site\" && git push origin main"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.0-rc.7",
     "next": "9.5.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"
