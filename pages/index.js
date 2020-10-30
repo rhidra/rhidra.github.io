@@ -133,13 +133,16 @@ export default function Home() {
                       img="img/kerlead/cover.png"
                       icons={[FaAngular, DiIonic, FaJava, DiMongodb]}
                       link="https://kerlead.fr">
+            I built a CRM mobile app, and connected it to its Java back-end API.
+            Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
+            current CRM web app, but adapted to a mobile environment. 
+            The app was be tested on Android and iOS, on smartphone and tablet. 
           </ProjectCard>
 
           <ProjectCard title="Video collective management software"
                       img="img/mouette/cover.png"
                       icons={[FaPython, DiDjango, FaJs]}
-                      link="https://medialamouette.fr"
-                      source="https://medialamouette.fr">
+                      link="https://medialamouette.fr">
             A small platform for video gear management, for a small collective.
             The app is used to register and rent video gear and manage projects.
             It also features automatic PDF generation of invoices and payments. 
