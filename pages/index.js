@@ -1,6 +1,6 @@
 import { Container, Flex, Heading, Box, Image, Center, Block, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid } from '@chakra-ui/core';
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava} from 'react-icons/fa';
-import {DiIonic, DiMongodb} from 'react-icons/di';
+import {DiIonic, DiMongodb, DiDjango} from 'react-icons/di';
 import {RiGitBranchFill} from 'react-icons/ri';
 import ProjectCard from '../components/project-card';
 
@@ -122,8 +122,10 @@ export default function Home() {
         <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={[6, 3]}>
           Projects
         </Heading>
-        <Heading display={['none', 'block']} as="h3" color="gray.500" fontSize={20} mb={6} fontStyle="oblique 10deg">
-          Hover to see more !
+        <Heading as="h3" color="gray.500" fontSize={20} mb={6} fontStyle="oblique 10deg">
+          <Text as="span" display={['none', 'inline']}>Hover </Text> 
+          <Text as="span" display={['inline', 'none']}>Click </Text> 
+          to see more !
         </Heading>
 
         <SimpleGrid spacing={4} minChildWidth="400px">
@@ -135,8 +137,9 @@ export default function Home() {
 
           <ProjectCard title="Video collective management software"
                       img="img/mouette/cover.png"
-                      icons={[FaPython, FaPython, FaJs]}
-                      link="https://medialamouette.fr">
+                      icons={[FaPython, DiDjango, FaJs]}
+                      link="https://medialamouette.fr"
+                      source="https://medialamouette.fr">
             A small platform for video gear management, for a small collective.
             The app is used to register and rent video gear and manage projects.
             It also features automatic PDF generation of invoices and payments. 
