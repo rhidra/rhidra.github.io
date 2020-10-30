@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import { ChakraProvider, extendTheme } from '@chakra-ui/core';
 import Head from 'next/head';
 
