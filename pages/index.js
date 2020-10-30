@@ -1,8 +1,9 @@
 import { Container, Flex, Heading, Box, Image, Center, Block, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid } from '@chakra-ui/core';
-import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava} from 'react-icons/fa';
-import {DiIonic, DiMongodb, DiDjango} from 'react-icons/di';
+import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap} from 'react-icons/fa';
+import {DiIonic, DiMongodb, DiDjango, DiNginx} from 'react-icons/di';
 import {RiGitBranchFill} from 'react-icons/ri';
 import ProjectCard from '../components/project-card';
+import ContactForm from '../components/contact-form';
 
 
 const logos = [{
@@ -129,7 +130,28 @@ export default function Home() {
         </Heading>
 
         <SimpleGrid spacing={4} minChildWidth="400px">
-          <ProjectCard title="CRM Mobile App"
+          <ProjectCard title="Peer-to-Peer Chat Web app"
+                      img="img/now-chat/cover.png"
+                      icons={[FaReact, FaBootstrap]}
+                      link="https://now-chat-1.herokuapp.com/"
+                      source="https://github.com/rhidra/now-chat">
+            A small pet project to learn ReactJS and WebRTC.
+            It creates a P2P connection with an another user, using a Node.js signaling server, 
+            which can then be used to transmit video, audio or any kind of data. 
+            The web app integrates a simple chat room between users.
+          </ProjectCard>
+
+          <ProjectCard title="拍手: New Media App in China"
+                      img="img/clapback/cover.jpg"
+                      icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx]}
+                      link="https://zuoyoubycurios.com">
+            A new media app, technically similar to TikTok, with social media interactions,
+            users video upload and processing and a scalable infrastructure. As the only dev, 
+            I had to build an app easy to iterate on and maintain, without any third party
+            technologies potentially blocked in China.
+          </ProjectCard>
+
+          <ProjectCard title="Kerlead: CRM Mobile App"
                       img="img/kerlead/cover.png"
                       icons={[FaAngular, DiIonic, FaJava, DiMongodb]}
                       link="https://kerlead.fr">
@@ -139,7 +161,7 @@ export default function Home() {
             The app was be tested on Android and iOS, on smartphone and tablet. 
           </ProjectCard>
 
-          <ProjectCard title="Video collective management software"
+          <ProjectCard title="Media la Mouette Web platform"
                       img="img/mouette/cover.png"
                       icons={[FaPython, DiDjango, FaJs]}
                       link="https://medialamouette.fr">
@@ -155,6 +177,15 @@ export default function Home() {
         <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={6}>
           Contact
         </Heading>
+
+        <Flex direction={['column', 'row']}>
+          <Box flex={0.7} pr={10}>
+            <ContactForm/>
+          </Box>
+          <Box flex={0.3} borderWidth="1px" borderRadius="lg" borderColor="#aaa" h="500px">
+                hello
+          </Box>
+        </Flex>
 
       </Box>
     </Container>
