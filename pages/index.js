@@ -1,9 +1,10 @@
-import { Container, Flex, Heading, Box, Image, Center, Block, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid } from '@chakra-ui/core';
-import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap} from 'react-icons/fa';
+import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid, VStack, ButtonGroup, Spacer } from '@chakra-ui/core';
+import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx} from 'react-icons/di';
 import {RiGitBranchFill} from 'react-icons/ri';
 import ProjectCard from '../components/project-card';
 import ContactForm from '../components/contact-form';
+import config from '../config';
 
 
 const logos = [{
@@ -40,7 +41,7 @@ export default function Home() {
   return (
     <>
     <DarkMode>
-      <Flex display={['none', 'flex']} pos="fixed" zIndex="10" w="100%" h="50px" direction="row-reverse" p={4}>
+      <Flex display={['none', 'flex']} pos="fixed" zIndex="10" w="100%" h="85px" direction="row-reverse" p={4} background="linear-gradient(180deg, rgba(12,11,37,1) 0%, rgba(255,255,255,0) 100%)">
         <Button variant="ghost" mr={3}>
           Contact
         </Button>
@@ -50,6 +51,18 @@ export default function Home() {
         <Button variant="ghost" mr={3}>
           About me
         </Button>
+
+        <Flex size="lg" className="social-grp" mr={6}>
+          <Button as="a" href={config.email} colorScheme="gray" variant="outline" className="social-btn">
+            <Icon as={FaEnvelope}/>
+          </Button>
+          <Button as="a" href={config.github} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
+            <Icon as={FaGithub}/>
+          </Button>
+          <Button as="a" href={config.linkedin} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
+            <Icon as={FaLinkedin}/>
+          </Button>
+        </Flex>
       </Flex>
     </DarkMode>
 
@@ -85,7 +98,9 @@ export default function Home() {
           </Flex>
         </Flex>
 
-        <Divider mb={12}/>
+        <Flex justify="center">
+          <Divider opacity="1" w={['100px', '500px']} mb={12} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
+        </Flex>
 
         <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={6}>
           About me
@@ -120,7 +135,9 @@ export default function Home() {
           </Paragraph>
         </SimpleGrid>
 
-        <Divider mb={12} mt={10}/>
+        <Flex justify="center">
+          <Divider opacity="1" w="100px" mb={12} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
+        </Flex>
 
         <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={[6, 3]}>
           Projects
@@ -174,7 +191,9 @@ export default function Home() {
           </ProjectCard>
         </SimpleGrid>
 
-        <Divider mb={12} mt={10}/>
+        <Flex justify="center">
+          <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="6px" borderColor="red.600"/>
+        </Flex>
 
         <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={6}>
           Contact
@@ -184,11 +203,25 @@ export default function Home() {
           <Box flex={0.7} pr={10}>
             <ContactForm/>
           </Box>
-          <Box flex={0.3} borderWidth="1px" borderRadius="lg" borderColor="#aaa" h="500px">
-                hello
-          </Box>
+        </Flex>
+        
+        <Flex justify="center">
+          <Divider opacity="1" w="100px" mb={10} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
+        <Flex size="lg" justify="center" pb={10}>
+          <Box className="social-grp">
+            <Button as="a" href={config.email} colorScheme="gray" variant="outline" className="social-btn">
+              <Icon boxSize="23px" as={FaEnvelope}/>
+            </Button>
+            <Button as="a" href={config.github} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
+              <Icon boxSize="23px" as={FaGithub}/>
+            </Button>
+            <Button as="a" href={config.linkedin} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
+              <Icon boxSize="23px" as={FaLinkedin}/>
+            </Button>
+          </Box>
+        </Flex>
       </Box>
     </Container>
     </>

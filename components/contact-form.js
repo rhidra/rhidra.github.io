@@ -4,6 +4,7 @@ import {AlertDialog, AlertDialogBody, AlertDialogFooter, AlertDialogHeader, Aler
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { FaLinkedin } from 'react-icons/fa';
 import {useRef, useState} from 'react';
+import config from '../config';
 
 export default function ContactForm() {
   const cancelRef = useRef();
@@ -96,7 +97,7 @@ export default function ContactForm() {
               <Button ref={cancelRef} onClick={onClose}>
                 Cancel
               </Button>
-              <Button as="a" target="_blank" href="https://www.linkedin.com/in/rhidra/" leftIcon={<FaLinkedin/>} colorScheme="blue" ml={3}>
+              <Button as="a" target="_blank" href={config.linkedin} leftIcon={<FaLinkedin/>} colorScheme="blue" ml={3}>
                 Contact on Linkedin
               </Button>
             </AlertDialogFooter>
