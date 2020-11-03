@@ -36,8 +36,6 @@ function Paragraph(props) {
 }
 
 export default function Home() {
-  console.log(process.env);
-  
   return (
     <>
     <DarkMode>

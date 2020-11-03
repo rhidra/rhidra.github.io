@@ -5,6 +5,9 @@ import { RiSendPlaneFill } from 'react-icons/ri';
 import { FaLinkedin } from 'react-icons/fa';
 import {useRef, useState} from 'react';
 import config from '../config';
+import emailjs from 'emailjs-com';
+
+emailjs.init("user_J7uv2jFWVU0RR1rpELcJC");
 
 export default function ContactForm() {
   const cancelRef = useRef();
@@ -28,11 +31,8 @@ export default function ContactForm() {
   }
 
   async function submit(values, {setSubmitting}) {
-    const res = await fetch('/api/contact', {method: 'POST', body: JSON.stringify(values)});
-    setSubmitting(false);
-    if (!res.ok) {
-      setIsOpen(true);
-    } else {
+    try {
+      await emailjs.send('gmail', 'contact', {message: values.msg, from_name: values.name, from_email: values.email})
       toast({
         title: "Request successfully sent !",
         description: "I will answer you about your project very soon ! Thank you for contacting me !",
@@ -40,6 +40,11 @@ export default function ContactForm() {
         duration: 9000,
         isClosable: true,
       });
+    } catch (e) {
+      console.error(e);
+      setIsOpen(true);
+    } finally {
+      setSubmitting(false);
     }
   }
 
