@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid, VStack, ButtonGroup, Spacer } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid } from '@chakra-ui/core';
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx} from 'react-icons/di';
 import {RiGitBranchFill} from 'react-icons/ri';

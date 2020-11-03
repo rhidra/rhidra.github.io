@@ -1,6 +1,6 @@
-import { AspectRatio, Box, Image, Heading, Text, WrapItem, Wrap, Icon, Button, HStack, Flex, Spacer, useDisclosure, DarkMode, useTheme, Circle } from "@chakra-ui/core";
+import { AspectRatio, Box, Image, Heading, Text, WrapItem, Wrap, Icon, Button, HStack, Flex, Spacer, useDisclosure, DarkMode, useTheme } from "@chakra-ui/core";
 import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton} from "@chakra-ui/core"
-import { FaGithub, FaEye, FaQuestion } from 'react-icons/fa';
+import { FaGithub, FaEye } from 'react-icons/fa';
 
 export default function ProjectCard(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();

@@ -1,5 +1,5 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { FormControl, FormLabel, FormErrorMessage, Button, Input, LightMode, DarkMode, Textarea, useToast } from '@chakra-ui/core';
+import { Formik, Form, Field } from 'formik';
+import { FormControl, FormErrorMessage, Button, Input, Textarea, useToast } from '@chakra-ui/core';
 import {AlertDialog, AlertDialogBody, AlertDialogFooter, AlertDialogHeader, AlertDialogContent, AlertDialogOverlay} from "@chakra-ui/core"
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { FaLinkedin } from 'react-icons/fa';
