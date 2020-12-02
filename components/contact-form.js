@@ -12,7 +12,8 @@ emailjs.init("user_J7uv2jFWVU0RR1rpELcJC");
 export default function ContactForm() {
   const cancelRef = useRef();
   const [isOpen, setIsOpen] = useState(false);
-  const onClose = () => setIsOpen(false)
+  const [isDisabled, setIsDisabled] = useState(false);
+  const onClose = () => setIsOpen(false);
   const toast = useToast();
 
   function validate(values) {
@@ -32,7 +33,8 @@ export default function ContactForm() {
 
   async function submit(values, {setSubmitting}) {
     try {
-      await emailjs.send('gmail', 'contact', {message: values.msg, from_name: values.name, from_email: values.email})
+      await emailjs.send('gmail', 'contact', {message: values.msg, from_name: values.name, from_email: values.email});
+      setIsDisabled(true);
       toast({
         title: "Request successfully sent !",
         description: "I will answer you about your project very soon ! Thank you for contacting me !",
@@ -80,7 +82,7 @@ export default function ContactForm() {
             )}
           </Field>
 
-          <Button mt={4} colorScheme="red" isLoading={props.isSubmitting} type="submit" leftIcon={<RiSendPlaneFill/>}>
+          <Button mt={4} colorScheme="red" isLoading={props.isSubmitting} isDisabled={isDisabled} type="submit" leftIcon={<RiSendPlaneFill/>}>
             Contact me
           </Button>
         </Form>
