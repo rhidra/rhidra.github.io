@@ -40,13 +40,13 @@ export default function Home() {
     <>
     <DarkMode>
       <Flex display={['none', 'flex']} pos="fixed" zIndex="10" w="100%" h="85px" direction="row-reverse" p={4} background="linear-gradient(180deg, rgba(12,11,37,1) 0%, rgba(255,255,255,0) 100%)">
-        <Button variant="ghost" mr={3}>
+        <Button variant="ghost" mr={3} as="a" href="#contact">
           Contact
         </Button>
-        <Button variant="ghost" mr={3}>
+        <Button variant="ghost" mr={3} as="a" href="#projects">
           Projects
         </Button>
-        <Button variant="ghost" mr={3}>
+        <Button variant="ghost" mr={3} as="a" href="#about">
           About me
         </Button>
 
@@ -96,7 +96,7 @@ export default function Home() {
           </Flex>
         </Flex>
 
-        <Flex justify="center">
+        <Flex justify="center" id="about">
           <Divider opacity="1" w={['100px', '500px']} mb={12} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
@@ -124,7 +124,6 @@ export default function Home() {
             <Strong>Angular</Strong>, <Strong>Ionic</Strong>, <Strong>Python</Strong>, <Strong>Docker</Strong> and <Strong>Sass</Strong>.
           </Paragraph>
 
-
           <Paragraph>
             Finally, my academic background gave me strong theoritical knowledge in <Strong>artificial intelligence</Strong>, <Strong>advanced
             communication protocols</Strong> and <Strong>robot navigation</Strong>.
@@ -133,7 +132,7 @@ export default function Home() {
           </Paragraph>
         </SimpleGrid>
 
-        <Flex justify="center">
+        <Flex justify="center" id="projects">
           <Divider opacity="1" w="100px" mb={12} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
@@ -189,7 +188,7 @@ export default function Home() {
           </ProjectCard>
         </SimpleGrid>
 
-        <Flex justify="center">
+        <Flex justify="center" id="contact">
           <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
