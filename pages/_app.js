@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>Rémy Hidra - Freelance Web Developer</title>
+        <title>Rémy Hidra // Freelance Web Developer</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Spartan:wght@700&display=swap" rel="stylesheet"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
