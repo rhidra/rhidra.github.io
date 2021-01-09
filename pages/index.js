@@ -100,7 +100,7 @@ export default function Home() {
           <Divider opacity="1" w={['100px', '500px']} mb={12} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={6}>
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={8}>
           About me
         </Heading>
         
@@ -136,18 +136,14 @@ export default function Home() {
           <Divider opacity="1" w="100px" mb={12} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={[6, 3]}>
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Projects
         </Heading>
-        <Heading as="h3" color="gray.500" fontSize={20} mb={6} fontStyle="oblique 10deg">
-          <Text as="span" display={['none', 'inline']}>Hover </Text> 
-          <Text as="span" display={['inline', 'none']}>Click </Text> 
-          to see more !
-        </Heading>
 
-        <SimpleGrid spacing={4} minChildWidth="400px">
+        <Flex flexDir="column" alignItems="center">
           <ProjectCard title="Peer-to-Peer Chat Web app"
-                      img="img/now-chat/cover.png"
+                      img="img/now-chat/icon.png"
+                      type="Fullstack"
                       icons={[FaReact, FaBootstrap]}
                       link="https://now-chat-1.herokuapp.com/"
                       source="https://github.com/rhidra/now-chat">
@@ -158,7 +154,8 @@ export default function Home() {
           </ProjectCard>
 
           <ProjectCard title="拍手: New Media App in China"
-                      img="img/clapback/cover.jpg"
+                      type="Fullstack"
+                      img="img/clapback/icon.png"
                       icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx]}
                       link="https://zuoyoubycurios.com">
             A new media app, technically similar to TikTok, with social media interactions,
@@ -168,6 +165,7 @@ export default function Home() {
           </ProjectCard>
 
           <ProjectCard title="Kerlead: CRM Mobile App"
+                      type="Frontend"
                       img="img/kerlead/cover.png"
                       icons={[FaAngular, DiIonic, FaJava, DiMongodb]}
                       link="https://kerlead.fr">
@@ -178,7 +176,8 @@ export default function Home() {
           </ProjectCard>
 
           <ProjectCard title="Media la Mouette Web platform"
-                      img="img/mouette/cover.png"
+                      type="Backend"
+                      img="img/mouette/icon.png"
                       icons={[FaPython, DiDjango, FaJs]}
                       link="https://medialamouette.fr">
             A small platform for video gear management, for a small collective.
@@ -186,13 +185,13 @@ export default function Home() {
             It also features automatic PDF generation of invoices and payments. 
             To coordinate the system through users, we implemented email and discord notifications.
           </ProjectCard>
-        </SimpleGrid>
+        </Flex>
 
         <Flex justify="center" id="contact">
           <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={6}>
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Contact
         </Heading>
 

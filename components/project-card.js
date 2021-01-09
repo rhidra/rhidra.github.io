@@ -1,34 +1,46 @@
 import { AspectRatio, Box, Image, Heading, Text, WrapItem, Wrap, Icon, Button, HStack, Flex, Spacer, useDisclosure, DarkMode, useTheme } from "@chakra-ui/core";
 import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton} from "@chakra-ui/core"
 import { FaGithub, FaEye } from 'react-icons/fa';
+import {useRouter} from 'next/router';
 
-export default function ProjectCard(props) {
+export default function ProjectCard({img, children, icons, title, type}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const theme = useTheme();
+  const router = useRouter();
 
   return (
-    <Box 
-      className="card" w={['xs', 'sm']} 
-      borderWidth="1px" borderRadius="lg" 
-      borderColor="#aaa" overflow="hidden" cursor={['pointer', 'auto']}
-      onClick={() => window.matchMedia(`(max-width: ${theme.breakpoints[1]})`).matches ? onOpen() : null}
+    <Flex 
+      className="card" mb={10}
+      borderRadius="lg" bg="gray.50"
+      boxShadow="base" maxW="4xl"
+      flexDir="column"
+      pb={6}
+      // onClick={() => router.push('/page')}
     >
-      <AspectRatio ratio={4/3}>
-        <Image src={props.img}/>
-      </AspectRatio>
+      <Flex flexDir="row">
+        <Image src={img} w={40} h={40} m={12} borderRadius="full" boxShadow="md"/>
 
-      <Box p={4} position="relative">
-        <Heading as="h4" fontSize="md" color="white">{props.title}</Heading>
-        <Wrap display={['block', 'none']} direction="row" color="white" mb={0}>
-          {props.icons.map((icon, key) => (
-            <WrapItem key={key}>
-              <Icon as={icon} boxSize="30px"/>
-            </WrapItem>
+        <Box pt={6} pr={12}>
+          <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1}>{type}</Heading>
+
+          <Heading as="h4" fontSize="md" textTransform="uppercase">{title}</Heading>
+
+          <Text fontSize="md" color="gray.500" mb={10} maxW="35em">
+            {children}
+          </Text>
+        </Box>
+      </Flex>
+
+      <Flex flexDir="row" justifyContent="center">
+          {icons.map((icon, key) => (
+              <Icon as={icon} color="black" boxSize="30px" mr={4} ml={4}/>
           ))}
-        </Wrap>
-      </Box>
+      </Flex>
+    </Flex>
+  );
       
-      {/* Desktop description display */}
+      
+      {/*
       <Box display={['none', 'block']} className="slide" bg="red.600" p={4} overflow="hidden">
         <Flex direction="column" h="100%" pb={3} pt={3}>
           <Wrap direction="row" justify="center" color="white" mb={4}>
@@ -39,8 +51,6 @@ export default function ProjectCard(props) {
             ))}
           </Wrap>
 
-          <Text color="white" fontSize="md" textAlign="center">
-              {props.children}
           </Text>
 
           <Spacer/>
@@ -61,7 +71,6 @@ export default function ProjectCard(props) {
         </Flex>
       </Box>
 
-      {/* Mobile description display */}
       <DarkMode>
       <Modal display={['block', 'none']} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
@@ -92,6 +101,5 @@ export default function ProjectCard(props) {
         </ModalContent>
       </Modal>
       </DarkMode>
-    </Box>
-  );
+      */}
 }
