@@ -23,7 +23,6 @@ export default function ProjectCard({img, children, icons, title, type, link, so
               boxShadow="base" maxW="5xl"
               flexDir="column"
               pb={2}
-              // onClick={() => router.push('/page')}
             >
               <Flex flexDir="row" alignItems="center">
                 <Image transition=".2s all" src={img} w={[20, isExpanded ? 40 : 20]} h={[20, isExpanded ? 40 : 20]} m={[4, 12]} borderRadius="full" boxShadow="md"/>
@@ -53,7 +52,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                 </Flex>
 
                 <Flex justifyContent={['center', 'flex-end']} mt={[6, 0]}>
-                  {source &&
+                  {/* {source &&
                     <Button variant="ghost" colorScheme="purple" mr={6} onClick={e => openLink(e, source)}>
                       <Icon as={FaCode} boxSize={5} opacity={.8}/>&nbsp;
                       Source
@@ -65,7 +64,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                       <Icon as={FaExternalLinkAlt} boxSize={5} opacity={.8}/>&nbsp;
                       Link
                     </Button>
-                  }
+                  } */}
                 </Flex>
               </AccordionPanel>
             </Flex>
