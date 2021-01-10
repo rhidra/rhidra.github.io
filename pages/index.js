@@ -90,7 +90,7 @@ export default function Home() {
               {logos.map((logo, key) => 
                 <Tooltip key={key} label={logo.tooltip} hasArrow>
                   <WrapItem>
-                      <Icon as={logo.icon} boxSize="50px" color="grey.800"/>
+                    <Icon as={logo.icon} boxSize="50px" color="grey.800"/>
                   </WrapItem>
                 </Tooltip>
               )}
