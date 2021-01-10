@@ -102,7 +102,7 @@ export default function Home() {
     
     <Box bg="purple.900" w="full" overflow="hidden">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" height="150" width="100%">
-        <path fill="HSL(30, 22%, 91%)" fill-opacity="1" d="M0,160L21.8,144C43.6,128,87,96,131,112C174.5,128,218,192,262,213.3C305.5,235,349,213,393,170.7C436.4,128,480,64,524,53.3C567.3,43,611,85,655,138.7C698.2,192,742,256,785,272C829.1,288,873,256,916,245.3C960,235,1004,245,1047,213.3C1090.9,181,1135,107,1178,96C1221.8,85,1265,139,1309,144C1352.7,149,1396,107,1418,85.3L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
+        <path fill="HSL(30, 22%, 91%)" d="M0,160L21.8,144C43.6,128,87,96,131,112C174.5,128,218,192,262,213.3C305.5,235,349,213,393,170.7C436.4,128,480,64,524,53.3C567.3,43,611,85,655,138.7C698.2,192,742,256,785,272C829.1,288,873,256,916,245.3C960,235,1004,245,1047,213.3C1090.9,181,1135,107,1178,96C1221.8,85,1265,139,1309,144C1352.7,149,1396,107,1418,85.3L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
           <animate repeatCount="indefinite" attributeName="d" dur="20s"
             values="
             M0,160L21.8,144C43.6,128,87,96,131,112C174.5,128,218,192,262,213.3C305.5,235,349,213,393,170.7C436.4,128,480,64,524,53.3C567.3,43,611,85,655,138.7C698.2,192,742,256,785,272C829.1,288,873,256,916,245.3C960,235,1004,245,1047,213.3C1090.9,181,1135,107,1178,96C1221.8,85,1265,139,1309,144C1352.7,149,1396,107,1418,85.3L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z;
@@ -155,17 +155,6 @@ export default function Home() {
         </Heading>
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
-          <ProjectCard title="Peer-to-Peer Chat Web app"
-                      img="img/now-chat/icon.png"
-                      type="Fullstack"
-                      icons={[FaReact, FaBootstrap]}
-                      link="https://now-chat-1.herokuapp.com/"
-                      source="https://github.com/rhidra/now-chat">
-            A small pet project to learn ReactJS and WebRTC.
-            It creates a P2P connection with an another user, using a Node.js signaling server, 
-            which can then be used to transmit video, audio or any kind of data. 
-            The web app integrates a simple chat room between users.
-          </ProjectCard>
 
           <ProjectCard title="拍手: New Media App in China"
                       type="Fullstack"
@@ -187,6 +176,18 @@ export default function Home() {
             Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
             current CRM web app, but adapted to a mobile environment. 
             The app was be tested on Android and iOS, on smartphone and tablet. 
+          </ProjectCard>
+
+          <ProjectCard title="Peer-to-Peer Chat Web app"
+                      img="img/now-chat/icon.png"
+                      type="Fullstack"
+                      icons={[FaReact, FaBootstrap]}
+                      link="https://now-chat-1.herokuapp.com/"
+                      source="https://github.com/rhidra/now-chat">
+            A small pet project to learn ReactJS and WebRTC.
+            It creates a P2P connection with an another user, using a Node.js signaling server, 
+            which can then be used to transmit video, audio or any kind of data. 
+            The web app integrates a simple chat room between users.
           </ProjectCard>
 
           <ProjectCard title="Media la Mouette Web platform"
