@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid, ButtonGroup } from '@chakra-ui/core';
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx} from 'react-icons/di';
 import {RiGitBranchFill} from 'react-icons/ri';
@@ -50,16 +50,18 @@ export default function Home() {
           About me
         </Button>
 
-        <Flex size="lg" className="social-grp" mr={6}>
-          <Button as="a" href={config.email} colorScheme="gray" variant="outline" className="social-btn">
-            <Icon as={FaEnvelope}/>
-          </Button>
-          <Button as="a" href={config.github} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
-            <Icon as={FaGithub}/>
-          </Button>
-          <Button as="a" href={config.linkedin} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
-            <Icon as={FaLinkedin}/>
-          </Button>
+        <Flex size="lg" mr={6}>
+          <ButtonGroup isAttached className="social-grp" colorScheme="gray" variant="outline">
+            <Button as="a" href={config.email} className="social-btn">
+              <Icon as={FaEnvelope}/>
+            </Button>
+            <Button as="a" href={config.github} target="_blank" className="social-btn">
+              <Icon as={FaGithub}/>
+            </Button>
+            <Button as="a" href={config.linkedin} target="_blank" className="social-btn">
+              <Icon as={FaLinkedin}/>
+            </Button>
+          </ButtonGroup>
         </Flex>
       </Flex>
     </DarkMode>
@@ -217,19 +219,19 @@ export default function Home() {
           <Divider opacity="1" w="100px" mb={10} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
         </Flex>
 
-        <Flex size="lg" justify="center" pb={10}>
-          <Box className="social-grp">
-            <Button as="a" href={config.email} colorScheme="gray" variant="outline" className="social-btn">
+        <Center size="lg" pb={10}>
+          <ButtonGroup isAttached className="social-grp" variant="outline" color="grey.200">
+            <Button as="a" href={config.email} className="social-btn" w={20} h={12}>
               <Icon boxSize="23px" as={FaEnvelope}/>
             </Button>
-            <Button as="a" href={config.github} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
+            <Button as="a" href={config.github} target="_blank" className="social-btn" w={20} h={12}>
               <Icon boxSize="23px" as={FaGithub}/>
             </Button>
-            <Button as="a" href={config.linkedin} target="_blank" colorScheme="gray" variant="outline" className="social-btn">
+            <Button as="a" href={config.linkedin} target="_blank" className="social-btn" w={20} h={12}>
               <Icon boxSize="23px" as={FaLinkedin}/>
             </Button>
-          </Box>
-        </Flex>
+          </ButtonGroup>
+        </Center>
       </Box>
     </Container>
     </>
