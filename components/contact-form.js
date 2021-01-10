@@ -1,5 +1,5 @@
 import { Formik, Form, Field } from 'formik';
-import { FormControl, FormErrorMessage, Button, Input, Textarea, useToast } from '@chakra-ui/core';
+import { FormControl, FormErrorMessage, Button, Input, Textarea, useToast, Flex } from '@chakra-ui/core';
 import {AlertDialog, AlertDialogBody, AlertDialogFooter, AlertDialogHeader, AlertDialogContent, AlertDialogOverlay} from "@chakra-ui/core"
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { FaLinkedin } from 'react-icons/fa';
@@ -82,9 +82,11 @@ export default function ContactForm() {
             )}
           </Field>
 
+          <Flex justify="flex-end">
           <Button mt={4} colorScheme="red" isLoading={props.isSubmitting} isDisabled={isDisabled} type="submit" leftIcon={<RiSendPlaneFill/>}>
             Contact me
           </Button>
+          </Flex>
         </Form>
       )}
     </Formik>

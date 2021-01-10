@@ -202,21 +202,21 @@ export default function Home() {
         </Flex>
 
         <Flex justify="center" id="contact">
-          <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="6px" borderColor="red.600"/>
+          <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
         </Flex>
 
         <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Contact
         </Heading>
 
-        <Flex direction={['column', 'row']}>
-          <Box flex={0.7} pr={10}>
+        <Flex justify="center">
+          <Box w="xl">
             <ContactForm/>
           </Box>
         </Flex>
         
         <Flex justify="center">
-          <Divider opacity="1" w="100px" mb={10} mt={10} borderBottomWidth="6px" borderColor="red.600"/>
+          <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
         </Flex>
 
         <Center size="lg" pb={10}>
