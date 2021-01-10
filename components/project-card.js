@@ -1,10 +1,16 @@
 import { Box, Image, Heading, Text, WrapItem, Wrap, Icon, Button, HStack, Flex, Spacer, useDisclosure, DarkMode, useTheme, Accordion, AccordionItem, AccordionButton, AccordionPanel } from "@chakra-ui/core";
 import {useRouter} from 'next/router';
-import {FaCaretDown, FaCaretUp} from 'react-icons/fa';
+import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt, FaLink} from 'react-icons/fa';
 
-export default function ProjectCard({img, children, icons, title, type}) {
+export default function ProjectCard({img, children, icons, title, type, link, source}) {
   const theme = useTheme();
   const router = useRouter();
+
+  function openLink(event, url) {
+    event.preventDefault();
+    event.stopPropagation();
+    window.open(url, '_blank');
+  }
 
   return (
     <Accordion allowMultiple mb={10}>
@@ -16,7 +22,7 @@ export default function ProjectCard({img, children, icons, title, type}) {
               borderRadius="lg" bg="gray.50"
               boxShadow="base" maxW="5xl"
               flexDir="column"
-              pb={6}
+              pb={2}
               // onClick={() => router.push('/page')}
             >
               <Flex flexDir="row" alignItems="center">
@@ -43,7 +49,23 @@ export default function ProjectCard({img, children, icons, title, type}) {
                 </Text>
 
                 <Flex flexDir="row" justifyContent="center">
-                  {icons.map((icon, key) => <Icon as={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>)}
+                  {icons.map((icon, key) => <Icon key={key} as={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>)}
+                </Flex>
+
+                <Flex justifyContent={['center', 'flex-end']} mt={[6, 0]}>
+                  {source &&
+                    <Button variant="ghost" colorScheme="purple" mr={6} onClick={e => openLink(e, source)}>
+                      <Icon as={FaCode} boxSize={5} opacity={.8}/>&nbsp;
+                      Source
+                    </Button>
+                  }
+
+                  {link &&
+                    <Button variant="ghost" colorScheme="purple" mr={[0, 6]} onClick={e => openLink(e, link)}>
+                      <Icon as={FaExternalLinkAlt} boxSize={5} opacity={.8}/>&nbsp;
+                      Link
+                    </Button>
+                  }
                 </Flex>
               </AccordionPanel>
             </Flex>
