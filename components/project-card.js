@@ -52,19 +52,19 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                 </Flex>
 
                 <Flex justifyContent={['center', 'flex-end']} mt={[6, 0]}>
-                  {/* {source &&
-                    <Button variant="ghost" colorScheme="purple" mr={6} onClick={e => openLink(e, source)}>
+                  {source &&
+                    <Button as="a" variant="ghost" colorScheme="purple" mr={6} onClick={e => openLink(e, source)}>
                       <Icon as={FaCode} boxSize={5} opacity={.8}/>&nbsp;
                       Source
                     </Button>
                   }
 
                   {link &&
-                    <Button variant="ghost" colorScheme="purple" mr={[0, 6]} onClick={e => openLink(e, link)}>
+                    <Button as="a" variant="ghost" colorScheme="purple" mr={[0, 6]} onClick={e => openLink(e, link)}>
                       <Icon as={FaExternalLinkAlt} boxSize={5} opacity={.8}/>&nbsp;
                       Link
                     </Button>
-                  } */}
+                  }
                 </Flex>
               </AccordionPanel>
             </Flex>
