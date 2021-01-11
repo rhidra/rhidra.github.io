@@ -3,9 +3,6 @@ import {useRouter} from 'next/router';
 import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt, FaLink} from 'react-icons/fa';
 
 export default function ProjectCard({img, children, icons, title, type, link, source}) {
-  const theme = useTheme();
-  const router = useRouter();
-
   function openLink(event, url) {
     event.preventDefault();
     event.stopPropagation();
