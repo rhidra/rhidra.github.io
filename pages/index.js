@@ -136,6 +136,19 @@ export default function Home() {
             technologies potentially blocked in China.
           </ProjectCard>
 
+          <ProjectCard title="Time tracker Web App"
+                      type="Fullstack"
+                      img="img/rnd4impact/icon.png"
+                      icons={[FaReact, FaBootstrap, FaNode, DiMongodb, DiNginx]}
+                      link="https://time-tracker-rnd4impact.herokuapp.com/">
+            To manage work time between their volunteers, the non-profit RND4IMPACT used to write
+            check-in and check-out time on paper. With the Covid pandemic, they were forced to go
+            remote. They needed an official ID verification method, so common time tracking software
+            was not an option. I designed for them a custom responsive time tracking web app,
+            with official international ID verification, work contract e-signature, check-in/check-out,
+            and administration at different level of authorization.
+          </ProjectCard>
+
           <ProjectCard title="Portfolio"
                       type="Frontend"
                       img="img/portfolio/icon.png"
