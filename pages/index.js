@@ -71,7 +71,7 @@ export default function Home() {
       <Box w="100%" pt={[16, 56]} pb={[0, 40]} pl={[5, 80]} pr={[5, 150]}>
         <Flex color="grey.800" direction={['column', 'row']}>
           <Center mb={[14, 0]}>
-            <Image src="img/photo.jp2" alt="Avatar" objectFit="cover" borderRadius="full" boxSize="150px" mr={[0, 16]} boxShadow="-3px 3px 3px #222"/>
+            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize="150px" mr={[0, 16]} boxShadow="-3px 3px 3px #222"/>
           </Center>
 
           <Flex direction="column" alignItems={['center', 'flex-start']}>
