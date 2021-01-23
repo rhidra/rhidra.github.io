@@ -71,7 +71,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:description" content="I am Rémy, a full-stack Web developer. Let's build an app together !"/>
         <meta property="og:image" content="https://rhidra.github.io/favicon.png"/>
         <meta property="og:url" content="https://rhidra.github.io"/>
-        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:card" content="summary"/>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
