@@ -40,7 +40,8 @@ export default function Home() {
   return (
     <>
     <DarkMode>
-      <Flex display={['none', 'flex']} pos="fixed" zIndex="10" w="100%" h="85px" direction="row-reverse" p={4} background="linear-gradient(180deg, rgba(12,11,37,1) 0%, rgba(255,255,255,0) 100%)">
+      <Flex display={['none', 'flex']} pos="fixed" zIndex="10" w="100%" h="85px" direction="row-reverse" p={4} 
+            background="linear-gradient(180deg, rgba(44, 44, 45, 0.37) 0%, rgba(255,255,255,0) 100%)">
         <Button variant="ghost" mr={3} as="a" href="#contact">
           Contact
         </Button>
@@ -135,7 +136,7 @@ export default function Home() {
     <Container maxWidth="100%" p="0" bg="purple.900">
       <Box w="100%" minHeight="150vh" pt={[5, 100]} pl={[5, 150]} pr={[5, 150]}>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
+        <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Projects
         </Heading>
 
@@ -212,7 +213,7 @@ export default function Home() {
           </ProjectCard>
         </Flex>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
+        <Heading id="about" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
           About me
         </Heading>
         
@@ -244,7 +245,7 @@ export default function Home() {
           </Paragraph>
         </SimpleGrid>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
+        <Heading id="contact" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Contact
         </Heading>
 
