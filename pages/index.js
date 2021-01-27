@@ -72,7 +72,7 @@ export default function Home() {
       <Box w="100%" pt={[10, 10, 56]} pb={[0, 0, 40]} pl={[5, null, null, null, 80]} pr={5}>
         <Flex color="grey.800" direction={['column', 'column', 'row']} justifyContent={['center', null, null, null, 'start']}>
           <Center mb={[14, 14, 0]} mr={[0, 0, 5, 20]} alignSelf={['center', 'center', 'flex-start']}>
-            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize={["200px", '250px', '200px', "250px"]} boxShadow="-3px 3px 3px #222"/>
+            <Image src="img/photo.jpg" alt="Avatar" color="grey.200" objectFit="cover" borderRadius="full" boxSize={["200px", '250px', '200px', "250px"]} boxShadow="-3px 3px 3px #222"/>
           </Center>
 
           <Flex direction="column" alignItems={['center', 'center', 'flex-start']}>
