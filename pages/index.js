@@ -33,7 +33,7 @@ function Strong(props) {
 }
 
 function Paragraph(props) {
-  return <Text mb={3} style={{textIndent: 20}} p={[0, 2]} color="grey.300" {...props}>{props.children}</Text>
+  return <Text mb={3} style={{textIndent: 20}} p={[0, 2]} color="grey.300" maxW="50ch" {...props}>{props.children}</Text>
 }
 
 export default function Home() {
@@ -69,7 +69,7 @@ export default function Home() {
     </DarkMode>
 
     <Container  maxWidth="100%" p="0" bg="grey.200">
-      <Box w="100%" pt={[10, 10, 56]} pb={[0, 0, 40]} pl={[5, 5, 5, 80]} pr={[5, 5, 5, 150]}>
+      <Box w="100%" pt={[10, 10, 56]} pb={[0, 0, 40]} pl={[5, null, null, null, 80]} pr={[5, null, null, null, 150]}>
         <Flex color="grey.800" direction={['column', 'column', 'row']} justifyContent="center">
           <Center mb={[14, 14, 0]} mr={[0, 0, 5, 20]} alignSelf={['center', 'center', 'flex-start']}>
             <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize={["200px", '250px', '200px', "250px"]} boxShadow="-3px 3px 3px #222"/>
@@ -136,7 +136,7 @@ export default function Home() {
     </Box>
 
     <Container maxWidth="100%" p="0" bg="purple.900">
-      <Box w="100%" minHeight="150vh" pt={[5, 100]} pl={[5, 5, 5, 150]} pr={[5, 5, 5, 150]}>
+      <Box w="100%" minHeight="150vh" pt={[5, 100]} pl={[5, 5, 5, 5, 150]} pr={[5, 5, 5, 5, 150]}>
 
         <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Projects
@@ -219,27 +219,27 @@ export default function Home() {
           About me
         </Heading>
         
-        <SimpleGrid columns={[1, 1, 2]} mb={12}>
-          <Paragraph>
+        <SimpleGrid columns={[1, 1, 2]} mb={12} justifyItems="center">
+          <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
             I am Rémy, a <Strong>fullstack web developer</Strong> and a part-time student pursuing a Masters degree in Telecommunications 
             and Navigation Systems at <Strong>Shanghai Jiao Tong University</Strong> and <Strong>INSA Lyon</Strong>.
           </Paragraph>
           
-          <Paragraph>
+          <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'start']} ml={[0, null, null, null, 5]}>
             Used to working in an <Strong>Agile environment</Strong>, I value including my client directly in the development process.
             In order to make the most efficient software as possible, I always communicate with everyone in the team.
           </Paragraph>
 
-          <Paragraph>
+          <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
             Passionate about new technologies, I have self taught myself most skills required to build
             complex infrastructures. With a good experience designing production systems, I am capable of
             building a secure, efficient and responsive <Strong>Web and Mobile based solution</Strong>. 
             I have experience with modern technologies
             like <Strong>NodeJS</Strong>, <Strong>ReactJS</Strong>, <Strong>React-Native</Strong>, <Strong>MongoDB</Strong>, 
-            <Strong>Angular</Strong>, <Strong>Ionic</Strong>, <Strong>Python</Strong>, <Strong>Docker</Strong> and <Strong>Sass</Strong>.
+            <Strong> Angular</Strong>, <Strong>Ionic</Strong>, <Strong>Python</Strong>, <Strong>Docker</Strong> and <Strong>Sass</Strong>.
           </Paragraph>
 
-          <Paragraph>
+          <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'start']} ml={[0, null, null, null, 5]}>
             Finally, my academic background gave me strong theoritical knowledge in <Strong>artificial intelligence</Strong>, <Strong>advanced
             communication protocols</Strong> and <Strong>robot navigation</Strong>.
             Not only do I appreciate learning new challenging topics, I believe some beauty can be found in creating elegant 
