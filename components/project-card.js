@@ -22,7 +22,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
               pb={2}
             >
               <Flex flexDir="row" alignItems="center">
-                <Image transition=".2s all" src={img} w={[20, isExpanded ? 40 : 20]} h={[20, isExpanded ? 40 : 20]} m={[4, 12]} borderRadius="full" boxShadow="md"/>
+                <Image transition=".2s all" src={img} w={[20, isExpanded ? 32 : 20, isExpanded ? 40 : 20]} h={[20, isExpanded ? 32 : 20, isExpanded ? 40 : 20]} m={[4, 12]} borderRadius="full" boxShadow="md"/>
 
                 <Box pt={6} pr={6}>
                   <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1} textAlign="left">{type}</Heading>
@@ -30,17 +30,17 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                   <Heading as="h4" fontSize="md" textTransform="uppercase" lineHeight={5} mb={4} textAlign="left">{title}</Heading>
 
                   <AccordionPanel p={0}>
-                    <Text fontSize="md" color="gray.500" mb={10} maxW="35em" textAlign="left" display={['none', 'block']}>
+                    <Text fontSize="md" color="gray.500" mb={10} maxW="35em" textAlign="left" display={['none', 'none', 'block']}>
                       {children}
                     </Text>
                   </AccordionPanel>
                 </Box>
 
-                <Icon display={['none', 'block']} as={isExpanded ? FaCaretUp : FaCaretDown} boxSize="40px" mr={10}/>
+                <Icon display={['none', 'none', 'block']} as={isExpanded ? FaCaretUp : FaCaretDown} boxSize="40px" mr={10}/>
               </Flex>
 
               <AccordionPanel>
-                <Text fontSize="md" color="gray.500" mb={10} pt={4} pl={4} pr={4} maxW="35em" textAlign="left" display={['block', 'none']}>
+                <Text fontSize="md" color="gray.500" mb={10} pt={4} pl={4} pr={4} maxW="35em" textAlign="left" display={['block', 'block', 'none']}>
                   {children}
                 </Text>
 
@@ -48,7 +48,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                   {icons.map((icon, key) => <Icon key={key} as={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>)}
                 </Flex>
 
-                <Flex justifyContent={['center', 'flex-end']} mt={[6, 0]}>
+                <Flex justifyContent={['center', 'center', 'flex-end']} mt={[6, 6, 0]}>
                   {source &&
                     <Button as="a" variant="ghost" colorScheme="purple" mr={6} onClick={e => openLink(e, source)}>
                       <Icon as={FaCode} boxSize={5} opacity={.8}/>&nbsp;
