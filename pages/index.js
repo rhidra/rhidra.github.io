@@ -69,14 +69,14 @@ export default function Home() {
     </DarkMode>
 
     <Container  maxWidth="100%" p="0" bg="grey.200">
-      <Box w="100%" pt={[10, 10, 56]} pb={[0, 0, 40]} pl={[5, 5, 80]} pr={[5, 5, 150]}>
-        <Flex color="grey.800" direction={['column', 'column', 'row']}>
-          <Center mb={[14, 14, 0]}>
-            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize={["200px", "250px"]} mr={[0, 0, 20]} boxShadow="-3px 3px 3px #222"/>
+      <Box w="100%" pt={[10, 10, 56]} pb={[0, 0, 40]} pl={[5, 5, 5, 80]} pr={[5, 5, 5, 150]}>
+        <Flex color="grey.800" direction={['column', 'column', 'row']} justifyContent="center">
+          <Center mb={[14, 14, 0]} mr={[0, 0, 5, 20]} alignSelf={['center', 'center', 'flex-start']}>
+            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize={["200px", '250px', '200px', "250px"]} boxShadow="-3px 3px 3px #222"/>
           </Center>
 
           <Flex direction="column" alignItems={['center', 'center', 'flex-start']}>
-            <Heading textAlign={['center', 'center', 'left']} fontSize={['2xl', '4xl']} lineHeight={['', '4rem']} textShadow="0px 1px 1px HSL(34, 10%, 52%)">
+            <Heading textAlign={['center', 'center', 'left']} fontSize={['2xl', '4xl', '2xl', '4xl']} lineHeight={['', '', '', '4rem']} textShadow="0px 1px 1px HSL(34, 10%, 52%)">
               Hi,
               <br/> 
               I'm&nbsp;
@@ -87,16 +87,18 @@ export default function Home() {
             </Heading>
 
             <Text mt={[10, 6]} mb={[12, 10]} fontSize={['md', 'lg']} textAlign={['center', 'center', 'left']}>
-              <Text as="span" display={['block', 'block', 'inline']} mb={4}>
-                <Strong m={[2, 4]} color="red.500">//</Strong>
-                &nbsp;French&nbsp;
-                <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'none']}>//</Strong>
-              </Text>
+              <Text as="span" display={['inline', 'inline', 'block', 'inline']} mb={4}>
+                <Text as="span" display={['block', 'block', 'inline']} mb={4}>
+                  <Strong m={[2, 4]} color="red.500">//</Strong>
+                  &nbsp;French&nbsp;
+                  <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'none']}>//</Strong>
+                </Text>
 
-              <Text as="span" display={['block', 'block', 'inline']} mb={4}>
-                <Strong m={[2, 4]} color="red.500">//</Strong>
-                &nbsp;Freelance&nbsp;
-                <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'none']}>//</Strong>
+                <Text as="span" display={['block', 'block', 'inline']} mb={4}>
+                  <Strong m={[2, 4]} color="red.500">//</Strong>
+                  &nbsp;Freelance&nbsp;
+                  <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'inline', 'none']}>//</Strong>
+                </Text>
               </Text>
               
               <Strong m={[2, 4]} color="red.500">//</Strong>
@@ -134,7 +136,7 @@ export default function Home() {
     </Box>
 
     <Container maxWidth="100%" p="0" bg="purple.900">
-      <Box w="100%" minHeight="150vh" pt={[5, 100]} pl={[5, 5, 150]} pr={[5, 5, 150]}>
+      <Box w="100%" minHeight="150vh" pt={[5, 100]} pl={[5, 5, 5, 150]} pr={[5, 5, 5, 150]}>
 
         <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Projects
