@@ -71,13 +71,18 @@ export default function Home() {
       <Box w="100%" pt={[16, 56]} pb={[0, 40]} pl={[5, 80]} pr={[5, 150]}>
         <Flex color="grey.800" direction={['column', 'row']}>
           <Center mb={[14, 0]}>
-            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize="150px" mr={[0, 16]} boxShadow="-3px 3px 3px #222"/>
+            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize="250px" mr={[0, 20]} boxShadow="-3px 3px 3px #222"/>
           </Center>
 
           <Flex direction="column" alignItems={['center', 'flex-start']}>
             <Heading textAlign={['center', 'left']} fontSize={['2xl', '4xl']} lineHeight={['', '4rem']} textShadow="0px 1px 1px HSL(34, 10%, 52%)">
-              Hi,<br/> I'm <Text as="span" color="red.500">Rémy Hidra</Text> 👋<br/> 
-              Let's build something together !
+              Hi,
+              <br/> 
+              I'm&nbsp;
+              <Text as="span" color="red.500">Rémy Hidra</Text>&nbsp; 
+              <Text as="span" textShadow="1px 1px 4px HSL(34, 10%, 52%)">👋</Text>
+              <br/> 
+              Let's build your <Text as="span" color="red.500">app</Text> together !
             </Heading>
 
             <Text mt={[10, 6]} mb={[12, 10]} fontSize={['md', 'lg']}>
