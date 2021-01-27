@@ -68,10 +68,10 @@ export default function Home() {
     </DarkMode>
 
     <Container  maxWidth="100%" p="0" bg="grey.200">
-      <Box w="100%" pt={[16, 56]} pb={[0, 40]} pl={[5, 80]} pr={[5, 150]}>
+      <Box w="100%" pt={[10, 56]} pb={[0, 40]} pl={[5, 80]} pr={[5, 150]}>
         <Flex color="grey.800" direction={['column', 'row']}>
           <Center mb={[14, 0]}>
-            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize="250px" mr={[0, 20]} boxShadow="-3px 3px 3px #222"/>
+            <Image src="img/photo.jpg" alt="Avatar" objectFit="cover" borderRadius="full" boxSize={["200px", "250px"]} mr={[0, 20]} boxShadow="-3px 3px 3px #222"/>
           </Center>
 
           <Flex direction="column" alignItems={['center', 'flex-start']}>
@@ -85,10 +85,21 @@ export default function Home() {
               Let's build your <Text as="span" color="red.500">app</Text> together !
             </Heading>
 
-            <Text mt={[10, 6]} mb={[12, 10]} fontSize={['md', 'lg']}>
-              <Strong m={[2, 4]} color="red.500">//</Strong> French 
-              <Strong m={[2, 4]} color="red.500">//</Strong> Freelance
-              <Strong m={[2, 4]} color="red.500">//</Strong> Full-stack web developer
+            <Text mt={[10, 6]} mb={[12, 10]} fontSize={['md', 'lg']} textAlign={['center', 'left']}>
+              <Text as="span" display={['block', 'inline']} mb={4}>
+                <Strong m={[2, 4]} color="red.500">//</Strong>
+                &nbsp;French&nbsp;
+                <Strong m={[2, 4]} color="red.500" display={['inline', 'none']}>//</Strong>
+              </Text>
+
+              <Text as="span" display={['block', 'inline']} mb={4}>
+                <Strong m={[2, 4]} color="red.500">//</Strong>
+                &nbsp;Freelance&nbsp;
+                <Strong m={[2, 4]} color="red.500" display={['inline', 'none']}>//</Strong>
+              </Text>
+              
+              <Strong m={[2, 4]} color="red.500">//</Strong>
+              &nbsp;Full-stack web developer&nbsp;
               <Strong m={[2, 4]} color="red.500">//</Strong>
             </Text>
 
