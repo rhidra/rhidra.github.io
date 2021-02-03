@@ -1,19 +1,25 @@
 import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid, ButtonGroup } from '@chakra-ui/core';
-import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin} from 'react-icons/fa';
+import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx} from 'react-icons/di';
-import {RiGitBranchFill} from 'react-icons/ri';
-import {SiNextDotJs} from 'react-icons/si';
+import {RiGitBranchFill, RiFlutterFill} from 'react-icons/ri';
+import {SiNextDotJs, SiFirebase} from 'react-icons/si';
 import ProjectCard from '../components/project-card';
 import ContactForm from '../components/contact-form';
 import config from '../config';
 
 
 const logos = [{
+  icon: FaReact,
+  tooltip: 'React-Native',
+}, {
+  icon: RiFlutterFill,
+  tooltip: 'Flutter',
+}, {
   icon: FaNode,
   tooltip: 'NodeJS',
 }, {
-  icon: FaReact,
-  tooltip: 'ReactJS',
+  icon: SiFirebase,
+  tooltip: 'Firebase',
 }, {
   icon: FaAngular,
   tooltip: 'Angular',
@@ -102,7 +108,7 @@ export default function Home() {
               </Text>
               
               <Strong m={[2, 4]} color="red.500">//</Strong>
-              &nbsp;Full-stack web developer&nbsp;
+              &nbsp;Mobile App Developer&nbsp;
               <Strong m={[2, 4]} color="red.500">//</Strong>
             </Text>
 
@@ -155,6 +161,41 @@ export default function Home() {
             technologies potentially blocked in China.
           </ProjectCard>
 
+          <ProjectCard title="Kerlead: CRM Mobile App"
+                      type="Frontend Mobile & Web"
+                      img="img/kerlead/cover.png"
+                      icons={[FaAngular, DiIonic, FaJava, DiMongodb]}
+                      link="https://kerlead.fr">
+            I built a CRM mobile app, and connected it to its Java back-end API.
+            Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
+            current CRM web app, but adapted to a mobile environment. 
+            The app was be tested on Android and iOS, on smartphone and tablet. 
+          </ProjectCard>
+
+          <ProjectCard title="Real-time Chat Mobile app"
+                      img="img/now-chat/icon.png"
+                      type="Frontend Mobile"
+                      icons={[RiFlutterFill, SiFirebase, FaAndroid, FaApple]}
+                      source="https://github.com/rhidra/now-talk">
+            A pet project to learn Flutter, Firebase and Cloud Firestore.
+            It uses the Firebase Real-Time services to easily build a Mobile app
+            Chat UI. It allows for multiple user registration and real-time messaging
+            between two users. The app is cross-platform, with a flexible interface and could be
+            expanded into a much more complex mobile app.
+          </ProjectCard>
+
+          <ProjectCard title="Portfolio"
+                      type="Frontend Web"
+                      img="img/portfolio/icon.png"
+                      icons={[FaReact, SiNextDotJs]}
+                      source="https://github.com/rhidra/rhidra.github.io"
+                      link="https://rhidra.github.io">
+            A simple portfolio made with React, NextJS and Chakra UI.
+            The goal was to design a good looking app from scratch, without any template or
+            strong external reference. The interface should also be SEO optimized and quickly
+            readable by a potential client.
+          </ProjectCard>
+
           <ProjectCard title="Time tracker Web App"
                       type="Fullstack"
                       img="img/rnd4impact/icon.png"
@@ -166,29 +207,6 @@ export default function Home() {
             was not an option. I designed for them a custom responsive time tracking web app,
             with official international ID verification, work contract e-signature, check-in/check-out,
             and administration at different level of authorization.
-          </ProjectCard>
-
-          <ProjectCard title="Portfolio"
-                      type="Frontend"
-                      img="img/portfolio/icon.png"
-                      icons={[FaReact, SiNextDotJs]}
-                      source="https://github.com/rhidra/rhidra.github.io"
-                      link="https://rhidra.github.io">
-            A simple portfolio made with React, NextJS and Chakra UI.
-            The goal was to design a good looking app from scratch, without any template or
-            strong external reference. The interface should also be SEO optimized and quickly
-            readable by a potential client.
-          </ProjectCard>
-
-          <ProjectCard title="Kerlead: CRM Mobile App"
-                      type="Frontend"
-                      img="img/kerlead/cover.png"
-                      icons={[FaAngular, DiIonic, FaJava, DiMongodb]}
-                      link="https://kerlead.fr">
-            I built a CRM mobile app, and connected it to its Java back-end API.
-            Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
-            current CRM web app, but adapted to a mobile environment. 
-            The app was be tested on Android and iOS, on smartphone and tablet. 
           </ProjectCard>
 
           <ProjectCard title="Peer-to-Peer Chat Web app"
