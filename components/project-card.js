@@ -27,8 +27,8 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                        h={[20, isExpanded ? 32 : 20, isExpanded ? 32 : 20, isExpanded ? 40 : 20]} 
                        m={[4, 12]} borderRadius="full" boxShadow="md"/>
 
-                <Box pt={6} pr={6}>
-                  <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1} textAlign="left">{type}</Heading>
+                <Box pt={[6, null, isExpanded ? 6 : 0]} pr={6}>
+                  <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1} lineHeight={1} mb={3} textAlign="left">{type}</Heading>
 
                   <Heading as="h4" fontSize="md" textTransform="uppercase" lineHeight={5} mb={4} textAlign="left">{title}</Heading>
 
