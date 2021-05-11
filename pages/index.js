@@ -187,6 +187,18 @@ export default function Home() {
             expanded into a much more complex mobile app.
           </ProjectCard>
 
+          <ProjectCard title="Peer-to-Peer Chat Web app"
+                      img="img/now-chat/icon.png"
+                      type="Fullstack"
+                      icons={[FaReact, SiRedux, SiSass, SiHeroku]}
+                      link="https://now-chat-1.herokuapp.com/"
+                      source="https://github.com/rhidra/now-chat">
+            A small pet project to learn ReactJS and WebRTC.
+            It creates a P2P connection with an another user, using a Node.js signaling server, 
+            which can then be used to transmit video, audio or any kind of data. 
+            The web app integrates a simple chat room between users.
+          </ProjectCard>
+          
           <ProjectCard title="Portfolio"
                       type="Frontend Web"
                       img="img/portfolio/icon.png"
@@ -231,18 +243,6 @@ export default function Home() {
             was not an option. I designed for them a custom responsive time tracking web app,
             with official international ID verification, work contract e-signature, check-in/check-out,
             and administration at different level of authorization.
-          </ProjectCard>
-
-          <ProjectCard title="Peer-to-Peer Chat Web app"
-                      img="img/now-chat/icon.png"
-                      type="Fullstack"
-                      icons={[FaReact, SiRedux, SiSass, SiHeroku]}
-                      link="https://now-chat-1.herokuapp.com/"
-                      source="https://github.com/rhidra/now-chat">
-            A small pet project to learn ReactJS and WebRTC.
-            It creates a P2P connection with an another user, using a Node.js signaling server, 
-            which can then be used to transmit video, audio or any kind of data. 
-            The web app integrates a simple chat room between users.
           </ProjectCard>
 
           <ProjectCard title="Media la Mouette Web platform"
