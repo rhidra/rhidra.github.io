@@ -1,6 +1,5 @@
-import { Box, Image, Heading, Text, WrapItem, Wrap, Icon, Button, HStack, Flex, Spacer, useDisclosure, DarkMode, useTheme, Accordion, AccordionItem, AccordionButton, AccordionPanel } from "@chakra-ui/core";
-import {useRouter} from 'next/router';
-import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt, FaLink} from 'react-icons/fa';
+import { Box, Image, Heading, Text, Icon, Button, Flex, Accordion, AccordionItem, AccordionButton, AccordionPanel } from "@chakra-ui/core";
+import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt} from 'react-icons/fa';
 
 export default function ProjectCard({img, children, icons, title, type, link, source}) {
   function openLink(event, url) {

@@ -2,7 +2,7 @@ import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapIte
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx} from 'react-icons/di';
 import {RiGitBranchFill, RiFlutterFill} from 'react-icons/ri';
-import {SiNextDotJs, SiFirebase} from 'react-icons/si';
+import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi} from 'react-icons/si';
 import ProjectCard from '../components/project-card';
 import ContactForm from '../components/contact-form';
 import config from '../config';
@@ -14,6 +14,9 @@ const logos = [{
 }, {
   icon: RiFlutterFill,
   tooltip: 'Flutter',
+}, {
+  icon: SiRedux,
+  tooltip: 'Redux',
 }, {
   icon: FaNode,
   tooltip: 'NodeJS',
@@ -150,10 +153,10 @@ export default function Home() {
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
 
-          <ProjectCard title="拍手: New Media App in China"
+        <ProjectCard title="拍手: New Media App in China"
                       type="Fullstack"
                       img="img/clapback/icon.png"
-                      icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx]}
+                      icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx, SiGooglecloud]}
                       link="https://zuoyoubycurios.com">
             A new media app, technically similar to TikTok, with social media interactions,
             users video upload and processing and a scalable infrastructure. As the only dev, 
@@ -196,6 +199,27 @@ export default function Home() {
             readable by a potential client.
           </ProjectCard>
 
+          <ProjectCard title="MasterMined: AI legal document organizer"
+                      type="Frontend Web"
+                      img="img/mastermined/logo.png"
+                      icons={[FaReact, SiNextDotJs, SiMaterialUi, SiHeroku]}>
+            To start selling their solution, the MasterMined startup, based in the US,
+            needed an interface to connect to their AI powered backend API.
+            Because of future interviews with investors, they needed a functionnal
+            demo in less than two weeks. I helped them reach that goal.<br/> 
+            Targeted at lawyers and legal professionals, the UI needed to be clean,
+            easily understandable and responsive. From a design mockup, I
+            built the entire frontend as a React/NextJS Web app. It features a full authentication
+            system, a multiple file uploader for AI analysis, and various document
+            organizer and visualization solutions.<br/>
+            Thanks to NextJS capabilities, the app was made very quickly, while staying
+            very fast and scalable. It was first deployed on a free Heroku server, to
+            be used as a small demo system, but can then be deployed on a CDN, for a very
+            fast worldwide delivery.<br/>
+            Since my contribution, MasterMined past their first round of seed investment.
+            They are now expanding the app even more.
+          </ProjectCard>
+
           <ProjectCard title="Time tracker Web App"
                       type="Fullstack"
                       img="img/rnd4impact/icon.png"
@@ -212,7 +236,7 @@ export default function Home() {
           <ProjectCard title="Peer-to-Peer Chat Web app"
                       img="img/now-chat/icon.png"
                       type="Fullstack"
-                      icons={[FaReact, FaBootstrap]}
+                      icons={[FaReact, SiRedux, SiSass, SiHeroku]}
                       link="https://now-chat-1.herokuapp.com/"
                       source="https://github.com/rhidra/now-chat">
             A small pet project to learn ReactJS and WebRTC.
