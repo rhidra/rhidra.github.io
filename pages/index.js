@@ -188,7 +188,7 @@ export default function Home() {
           </ProjectCard>
 
           <ProjectCard title="Peer-to-Peer Chat Web app"
-                      img="img/now-chat/icon.png"
+                      img="img/now-chat/icon2.png"
                       type="Fullstack"
                       icons={[FaReact, SiRedux, SiSass, SiHeroku]}
                       link="https://now-chat-1.herokuapp.com/"
@@ -198,7 +198,7 @@ export default function Home() {
             which can then be used to transmit video, audio or any kind of data. 
             The web app integrates a simple chat room between users.
           </ProjectCard>
-          
+
           <ProjectCard title="Portfolio"
                       type="Frontend Web"
                       img="img/portfolio/icon.png"
