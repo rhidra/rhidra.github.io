@@ -7,7 +7,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        {/* SEO */}
         <title>Rémy Hidra // Mobile App Developer</title>
+        <meta name="author" content="Rémy Hidra"/>
+        <meta name="description" content="I am Rémy Hidra, a french software engineer. This is my portfolio. Take a look at my projects !"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
         {/* Fonts (Montserrat / Spartan) */}
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Spartan:wght@700&display=swap" rel="stylesheet"/>
@@ -29,7 +33,6 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website"/> 
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:site" content="rehidra"/>
-        <meta name="author" content="Rémy Hidra"/> 
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
