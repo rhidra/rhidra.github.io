@@ -2,7 +2,7 @@ import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapIte
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
 import {RiGitBranchFill, RiFlutterFill} from 'react-icons/ri';
-import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi, SiJavascript, SiWebgl, SiWebpack, SiTypescript} from 'react-icons/si';
+import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi, SiMysql, SiWebgl, SiWebpack, SiTypescript} from 'react-icons/si';
 import ProjectCard from '../components/project-card';
 import ContactForm from '../components/contact-form';
 import config from '../config';
@@ -173,6 +173,26 @@ export default function Home() {
             Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
             current CRM web app, but adapted to a mobile environment. 
             The app was be tested on Android and iOS, on smartphone and tablet. 
+          </ProjectCard>
+
+          <ProjectCard title="HLS Converter API"
+                      img="img/hls/logo.png"
+                      type="Fullstack"
+                      icons={[FaNode, FaReact, SiTypescript, SiMysql]}
+                      source="https://github.com/rhidra/hls-converter-api"
+                      link="https://hls-converter.com">
+            A small experiment to try to monetize the video encoding module of Clapback.
+            HLS is a video streaming protocol allowing adaptive bitrate live and VOD streaming.
+            But few resources exists on how to create a video streaming HLS pipeline.
+            With NodeJS, SQLite and FFMPEG, I made a light back-end API using scalable
+            Docker containers, capable of converting a MP4 video file to a HLS stream. 
+            On the contrary to most video conversion services, this API
+            provides a lot of configuration options, including selecting the quality of each
+            of the final streams.
+            To quickly build the product, I used Rapid API service to register
+            my API and handle all the authentication, monetization and quota.
+            In order to easily market the API and demonstrate how it works, I built a small front-end
+            using React and vanilla CSS.
           </ProjectCard>
 
           <ProjectCard title="Fluid Simulation Experiment"
