@@ -167,8 +167,7 @@ export default function Home() {
           <ProjectCard title="Kerlead: CRM Mobile App"
                       type="Frontend Mobile & Web"
                       img="img/kerlead/cover.png"
-                      icons={[FaAngular, DiIonic, FaJava, DiMongodb]}
-                      link="https://kerlead.fr">
+                      icons={[FaAngular, DiIonic, FaJava, DiMongodb]}>
             I built a CRM mobile app, and connected it to its Java back-end API.
             Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
             current CRM web app, but adapted to a mobile environment. 
