@@ -92,7 +92,7 @@ export default function Home() {
               <Text as="span" color="red.500">Rémy Hidra</Text>&nbsp; 
               <Text as="span" textShadow="1px 1px 4px HSL(34, 10%, 52%)">👋</Text>
               <br/> 
-              Let's build your <Text as="span" color="red.500">app</Text> together !
+              Let's build your <Text as="span" color="red.500">project</Text> together !
             </Heading>
 
             <Text mt={[10, 6]} mb={[12, 10]} fontSize={['md', 'lg']} textAlign={['center', 'center', 'left']}>
@@ -111,7 +111,7 @@ export default function Home() {
               </Text>
               
               <Strong m={[2, 4]} color="red.500">//</Strong>
-              &nbsp;Mobile App Developer&nbsp;
+              &nbsp;Software Engineer&nbsp;
               <Strong m={[2, 4]} color="red.500">//</Strong>
             </Text>
 
