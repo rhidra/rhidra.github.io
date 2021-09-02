@@ -295,7 +295,7 @@ export default function Home() {
         
         <SimpleGrid columns={[1, 1, 2]} mb={12} justifyItems="center">
           <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
-            I am Rémy, a <Strong>fullstack web developer</Strong> and a part-time student pursuing a Masters degree in Telecommunications 
+            I am Rémy, a <Strong>software engineer</Strong> and a part-time student pursuing a Masters degree in Telecommunications 
             and Navigation Systems at <Strong>Shanghai Jiao Tong University</Strong> and <Strong>INSA Lyon</Strong>.
           </Paragraph>
           

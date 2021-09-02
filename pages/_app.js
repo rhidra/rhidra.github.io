@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Head>
         {/* SEO */}
-        <title>Rémy Hidra // Mobile App Developer</title>
+        <title>Rémy Hidra // Software Engineer</title>
         <meta name="author" content="Rémy Hidra"/>
         <meta name="description" content="I am Rémy Hidra, a french software engineer. This is my portfolio. Take a look at my projects !"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
