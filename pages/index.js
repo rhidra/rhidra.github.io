@@ -6,6 +6,7 @@ import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMat
 import ProjectCard from '../components/project-card';
 import ContactForm from '../components/contact-form';
 import config from '../config';
+import Skills from '../components/skills';
 
 
 const logos = [{
@@ -147,13 +148,19 @@ export default function Home() {
     <Container maxWidth="100%" p="0" bg="purple.900">
       <Box w="100%" minHeight="150vh" pt={[5, 100]} pl={[5, 5, 5, 5, 150]} pr={[5, 5, 5, 5, 150]}>
 
-        <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
+        <Heading id="skills" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
+          Tech Skills
+        </Heading>
+
+        <Skills/>
+
+        <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={12}>
           Projects
         </Heading>
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
 
-        <ProjectCard title="拍手: New Media App in China"
+          <ProjectCard title="拍手: New Media App in China"
                       type="Fullstack"
                       img="img/clapback/icon.png"
                       icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx, SiGooglecloud]}
