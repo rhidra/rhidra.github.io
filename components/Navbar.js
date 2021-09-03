@@ -17,7 +17,7 @@ export default function Navbar() {
           Projects
         </Button>
         <Button variant="ghost" mr={3} as="a" href="#skills">
-          Tech Skills
+          Skills
         </Button>
 
         <Flex size="lg" mr={6}>
