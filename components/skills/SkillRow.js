@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/core";
+import { Box, Heading, Text } from "@chakra-ui/core";
 
 export default function SkillRow({title, subtitle}) {
   return (
