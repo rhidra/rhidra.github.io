@@ -3,8 +3,8 @@ import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstra
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
 import {RiGitBranchFill, RiFlutterFill} from 'react-icons/ri';
 import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi, SiMysql, SiWebgl, SiWebpack, SiTypescript} from 'react-icons/si';
-import ProjectCard from '../components/project-card';
-import ContactForm from '../components/contact-form';
+import ProjectCard from '../components/ProjectCard';
+import ContactForm from '../components/ContactForm';
 import config from '../config';
 import Skills from '../components/skills';
 
