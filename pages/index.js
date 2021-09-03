@@ -96,17 +96,14 @@ export default function Home() {
               <Strong m={[2, 4]} color="red.500">//</Strong>
             </Text>
 
-            <Wrap color="white" spacing={5} justify={['center', 'flex-start']} pb={[2, 10]}>
-              {logos.map((logo, key) => 
-                <Tooltip key={key} label={logo.tooltip} hasArrow>
-                  <WrapItem>
-                    <Icon as={logo.icon} boxSize="50px" color="grey.800"/>
-                  </WrapItem>
-                </Tooltip>
-              )}
-            </Wrap>
           </Flex>
         </Flex>
+
+        <Text>
+          I am a french junior software engineer, with a strong freelance experience in fullstack web development.
+          With a Master of Research in Robotics, I love maths and hardocde tech problems. But I also like to improve
+          design and user experience of software, to build a more human-centered tech.
+        </Text>
       </Box>
     </Container>
     
