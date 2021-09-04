@@ -8,8 +8,8 @@ import ContactForm from '../components/ContactForm';
 import config from '../config';
 import Skills from '../components/skills';
 import Wave from '../components/Wave';
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
+import Navbar from '../components/layout/Navbar';
+import Header from '../components/layout/Header';
 import { Paragraph, Strong } from "../components/typography";
 
 

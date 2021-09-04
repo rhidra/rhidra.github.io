@@ -1,5 +1,5 @@
 import { Box, Center, Container, Flex, Heading, Image, Text } from "@chakra-ui/core";
-import { Strong, Paragraph } from "./typography";
+import { Strong, Paragraph } from "../typography";
 
 export default function Header() {
   return (

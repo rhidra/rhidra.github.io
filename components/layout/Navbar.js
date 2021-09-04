@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, DarkMode, Flex, Icon } from "@chakra-ui/core";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import config from "../config";
+import config from "../../config";
 
 export default function Navbar() {
   return (
