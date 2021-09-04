@@ -202,6 +202,10 @@ export default function Home() {
           </ProjectCard>
         </Flex>
 
+        <Heading id="education" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
+          Education
+        </Heading>
+
         <Heading id="about" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
           About me
         </Heading>

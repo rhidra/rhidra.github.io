@@ -13,6 +13,9 @@ export default function Navbar() {
         <Button variant="ghost" mr={3} as="a" href="#about">
           About me
         </Button>
+        <Button variant="ghost" mr={3} as="a" href="#education">
+          Education
+        </Button>
         <Button variant="ghost" mr={3} as="a" href="#projects">
           Projects
         </Button>
