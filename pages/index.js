@@ -101,7 +101,7 @@ export default function Home() {
 
         <Text>
           I am a french junior software engineer, with a strong freelance experience in fullstack web development.
-          With a Master of Research in Robotics, I love maths and hardocde tech problems. But I also like to improve
+          With a Master of Research in Robotics, I love maths and hardcore tech problems. But I also like to improve
           design and user experience of software, to build a more human-centered tech.
         </Text>
       </Box>
