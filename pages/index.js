@@ -54,7 +54,8 @@ export default function Home() {
     <Navbar/>
 
     <Container maxWidth="100%" p="0" bg="grey.200">
-      <Box w="100%" maxW="85rem" pt={[10, 10, 56]} pb={[0, 0, 40]} px={5} mx="auto">
+      <Box w="100%" maxW="85rem" pt={[10, 10, 56]} pb={[0, 0, 32]} px={10} mx="auto">
+        
         <Flex color="grey.800" direction={['column', 'column', 'row']} justifyContent={['center', null, null, null, 'start']}>
           <Center mb={[14, 14, 0]} mr={[0, 0, 5, 20]} alignSelf={['center', 'center', 'flex-start']}>
             <Image 
@@ -79,7 +80,7 @@ export default function Home() {
             <Text mt={[10, 6]} mb={[12, 10]} fontSize={['md', 'lg']} textAlign={['center', 'center', 'left']}>
               <Text as="span" display={['inline', 'inline', 'block', 'inline']} mb={4}>
                 <Text as="span" display={['block', 'block', 'inline']} mb={4}>
-                  <Strong m={[2, 4]} color="red.500">//</Strong>
+                  <Strong mr={[2, 4]} color="red.500">//</Strong>
                   &nbsp;French&nbsp;
                   <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'none']}>//</Strong>
                 </Text>
@@ -91,19 +92,18 @@ export default function Home() {
                 </Text>
               </Text>
               
-              <Strong m={[2, 4]} color="red.500">//</Strong>
+              <Strong mr={[2, 4]} ml={[0, 0, 0, 4]} color="red.500">//</Strong>
               &nbsp;Software Engineer&nbsp;
               <Strong m={[2, 4]} color="red.500">//</Strong>
             </Text>
 
+            <Text maxW="50ch" color="rgba(74, 72, 67, 0.93)">
+              With a Master of Research in Robotics, I love maths and hardcore tech problems. But I also like to improve
+              design and user experience of software, to build a more human-centered tech.
+            </Text>
           </Flex>
         </Flex>
 
-        <Text>
-          I am a french junior software engineer, with a strong freelance experience in fullstack web development.
-          With a Master of Research in Robotics, I love maths and hardcore tech problems. But I also like to improve
-          design and user experience of software, to build a more human-centered tech.
-        </Text>
       </Box>
     </Container>
     
