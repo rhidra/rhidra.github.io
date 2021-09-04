@@ -16,8 +16,8 @@ export default function Navbar() {
         <Button variant="ghost" mr={3} as="a" href="#education">
           Education
         </Button>
-        <Button variant="ghost" mr={3} as="a" href="#projects">
-          Projects
+        <Button variant="ghost" mr={3} as="a" href="#work">
+          Work
         </Button>
         <Button variant="ghost" mr={3} as="a" href="#skills">
           Skills
