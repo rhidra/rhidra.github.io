@@ -54,7 +54,7 @@ export default function Home() {
     <Navbar/>
 
     <Container maxWidth="100%" p="0" bg="grey.200">
-      <Box w="100%" maxW="85rem" pt={[10, 10, 56]} pb={[0, 0, 40]} pl={[5, null, null, null, 5]} mx="auto" pr={5}>
+      <Box w="100%" maxW="85rem" pt={[10, 10, 56]} pb={[0, 0, 40]} px={5} mx="auto">
         <Flex color="grey.800" direction={['column', 'column', 'row']} justifyContent={['center', null, null, null, 'start']}>
           <Center mb={[14, 14, 0]} mr={[0, 0, 5, 20]} alignSelf={['center', 'center', 'flex-start']}>
             <Image 
