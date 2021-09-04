@@ -1,7 +1,7 @@
-import { Container, Flex, Heading, Box, Image, Center, Text, Icon, Wrap, WrapItem, Tooltip, Button, DarkMode, Divider, SimpleGrid, ButtonGroup } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, Center, Icon, Button, Divider, SimpleGrid, ButtonGroup } from '@chakra-ui/core';
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaGithub, FaEnvelope, FaLinkedin, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
-import {RiGitBranchFill, RiFlutterFill} from 'react-icons/ri';
+import {RiFlutterFill} from 'react-icons/ri';
 import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi, SiMysql, SiWebgl, SiWebpack, SiTypescript} from 'react-icons/si';
 import ProjectCard from '../components/ProjectCard';
 import ContactForm from '../components/ContactForm';
@@ -11,36 +11,7 @@ import Wave from '../components/Wave';
 import Navbar from '../components/layout/Navbar';
 import Header from '../components/layout/Header';
 import { Paragraph, Strong } from "../components/typography";
-
-
-const logos = [{
-  icon: FaReact,
-  tooltip: 'React-Native',
-}, {
-  icon: RiFlutterFill,
-  tooltip: 'Flutter',
-}, {
-  icon: SiRedux,
-  tooltip: 'Redux',
-}, {
-  icon: FaNode,
-  tooltip: 'NodeJS',
-}, {
-  icon: SiFirebase,
-  tooltip: 'Firebase',
-}, {
-  icon: FaAngular,
-  tooltip: 'Angular',
-}, {
-  icon: DiMongodb,
-  tooltip: 'MongoDB',
-}, {
-  icon: FaDocker,
-  tooltip: 'Docker',
-}, {
-  icon: RiGitBranchFill,
-  tooltip: 'Git',
-}];
+import Footer from '../components/layout/Footer';
 
 export default function Home() {
   return (
@@ -248,23 +219,7 @@ export default function Home() {
           </Box>
         </Flex>
         
-        <Flex justify="center">
-          <Divider opacity="1" w="100px" mb={12} mt={12} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
-        </Flex>
-
-        <Center size="lg" pb={10}>
-          <ButtonGroup isAttached className="social-grp" variant="outline" color="grey.200">
-            <Button as="a" href={config.email} className="social-btn" w={20} h={12}>
-              <Icon boxSize="23px" as={FaEnvelope}/>
-            </Button>
-            <Button as="a" href={config.github} target="_blank" className="social-btn" w={20} h={12}>
-              <Icon boxSize="23px" as={FaGithub}/>
-            </Button>
-            <Button as="a" href={config.linkedin} target="_blank" className="social-btn" w={20} h={12}>
-              <Icon boxSize="23px" as={FaLinkedin}/>
-            </Button>
-          </ButtonGroup>
-        </Center>
+        <Footer/>
       </Box>
     </Container>
     </>

@@ -17,7 +17,8 @@ export default function Header() {
           </Center>
 
           <Flex direction="column" alignItems={['center', 'center', 'flex-start']}>
-            <Heading textAlign={['center', 'center', 'left']} fontSize={['2xl', '4xl', '2xl', '4xl']} lineHeight={['', '', '', '4rem']} textShadow="0px 1px 1px HSL(34, 10%, 52%)">
+            <Heading textAlign={['center', 'center', 'left']} fontSize={['2xl', '4xl', '2xl', '4xl']} 
+                    lineHeight={['', '', '', '4rem']} textShadow="0px 1px 1px HSL(34, 10%, 52%)">
               Hi,
               <br/> 
               I'm&nbsp;
