@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, Box, SimpleGrid } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, SimpleGrid, Text } from '@chakra-ui/core';
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
 import {RiFlutterFill} from 'react-icons/ri';
@@ -12,6 +12,7 @@ import Navbar from '../components/layout/Navbar';
 import Header from '../components/layout/Header';
 import { Paragraph, Strong } from "../components/typography";
 import Footer from '../components/layout/Footer';
+import Education from '../components/education';
 
 export default function Home() {
   return (
@@ -189,6 +190,8 @@ export default function Home() {
         <Heading id="education" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
           Education
         </Heading>
+
+        <Education/>
 
         <Heading id="about" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
           About me
