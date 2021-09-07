@@ -1,4 +1,5 @@
 import { Box, Image, Heading, Text, Icon, Button, Flex, Accordion, AccordionItem, AccordionButton, AccordionPanel } from "@chakra-ui/core";
+import { Fragment } from "react";
 import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt} from 'react-icons/fa';
 
 export default function ProjectCard({img, children, icons, title, type, link, source}) {
@@ -47,7 +48,16 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                 </Text>
 
                 <Flex flexDir="row" justifyContent="center">
-                  {icons.map((icon, key) => <Icon key={key} as={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>)}
+                  {icons.map((icon, key) => 
+                    <Fragment key={key}>
+                    {typeof(icon) !== 'string' && 
+                      <Icon as={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>
+                    }
+                    {typeof(icon) === 'string' && 
+                      <Image src={`/img/icons/${icon}`} alt={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>
+                    }
+                    </Fragment>
+                  )}
                 </Flex>
 
                 <Flex justifyContent={['center', 'center', 'center', 'flex-end']} mt={[6, 6, 6, 0]}>
