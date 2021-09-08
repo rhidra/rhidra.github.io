@@ -11,7 +11,6 @@ export default function Education() {
 
       During this master, I learned a lot of general knowledge in Geographic Information 
       Systems, satellite data processing and robot navigation, while exploring AI computer vision techniques.
-
     </EducationRow>
 
     <EducationRow
@@ -36,8 +35,6 @@ export default function Education() {
       Through this exchange semester in South Korea, I took various mobile networking and 
       algorithmic courses, while discovering the great Korean culture.
     </EducationRow>
-
-
     </>
   );
 }
