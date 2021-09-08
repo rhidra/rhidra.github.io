@@ -3,7 +3,7 @@ import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaAndroid, FaApple
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
 import {RiFlutterFill} from 'react-icons/ri';
 import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi, SiMysql, SiWebgl, SiWebpack, SiTypescript} from 'react-icons/si';
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/projects/ProjectCard";
 import Link from "next/link";
 import Mouette from "../components/projects/Mouette";
 import HlsConverter from "../components/projects/HlsConverter";

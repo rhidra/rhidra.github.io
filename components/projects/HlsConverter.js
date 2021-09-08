@@ -1,6 +1,6 @@
 import { FaDocker, FaNode, FaReact } from "react-icons/fa";
 import { SiMysql, SiTypescript } from "react-icons/si";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function HlsConverter() {
   return (

@@ -1,6 +1,6 @@
 import { FaReact } from "react-icons/fa";
 import { SiHeroku, SiRedux, SiSass } from "react-icons/si";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function NowChat() {
   return (

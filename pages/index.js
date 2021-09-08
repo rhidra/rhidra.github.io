@@ -5,7 +5,7 @@ import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/
 import {RiFlutterFill} from 'react-icons/ri';
 import {SiNextDotJs, SiFirebase, SiRedux, SiSass, SiHeroku, SiGooglecloud, SiMaterialUi, SiMysql, SiWebgl, SiWebpack, SiTypescript} from 'react-icons/si';
 import {BiVector} from 'react-icons/bi';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/projects/ProjectCard';
 import ContactForm from '../components/ContactForm';
 import Skills from '../components/skills';
 import Wave from '../components/Wave';

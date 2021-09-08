@@ -1,7 +1,7 @@
 import { FaAndroid, FaApple } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import { SiFirebase } from "react-icons/si";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function NowTalk() {
   return (

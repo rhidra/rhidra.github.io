@@ -1,6 +1,6 @@
 import { DiJavascript1 } from "react-icons/di";
 import { SiTypescript, SiWebgl, SiWebpack } from "react-icons/si";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function FluidSimulation() {
   return (

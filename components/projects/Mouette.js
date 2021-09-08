@@ -1,6 +1,6 @@
 import { DiDjango } from "react-icons/di";
 import { FaJs, FaPython } from "react-icons/fa";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function Mouette() {
   return (
