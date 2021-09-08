@@ -7,7 +7,22 @@ export default function HlsConverter() {
     <ProjectCard title="HLS Converter API"
                 img="img/hls/logo.png"
                 type="Fullstack"
-                icons={[FaNode, FaReact, SiTypescript, SiMysql, FaDocker]}
+                icons={[{
+                  icon: FaNode,
+                  label: 'NodeJS',
+                }, {
+                  icon: FaReact,
+                  label: 'React',
+                }, {
+                  icon: SiTypescript,
+                  label: 'Typescript',
+                }, {
+                  icon: SiMysql,
+                  label: 'SQL',
+                }, {
+                  icon: FaDocker,
+                  label: 'Docker',
+                }]}
                 source="https://github.com/rhidra/hls-converter-api"
                 link="https://hls-converter.com">
       A small experiment to try to monetize the video encoding module of Clapback.

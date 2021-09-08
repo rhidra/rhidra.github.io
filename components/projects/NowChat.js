@@ -7,7 +7,19 @@ export default function NowChat() {
     <ProjectCard title="Peer-to-Peer Chat Web app"
                 img="img/now-chat/icon2.png"
                 type="Fullstack"
-                icons={[FaReact, SiRedux, SiSass, SiHeroku]}
+                icons={[{
+                  icon: FaReact,
+                  label: 'React',
+                }, {
+                  icon: SiRedux,
+                  label: 'Redux',
+                }, {
+                  icon: SiSass,
+                  label: 'SASS',
+                }, {
+                  icon: SiHeroku,
+                  label: 'Heroku',
+                }]}
                 link="https://now-chat-1.herokuapp.com/"
                 source="https://github.com/rhidra/now-chat">
       A small pet project to learn ReactJS and WebRTC.

@@ -8,7 +8,19 @@ export default function NowTalk() {
     <ProjectCard title="Real-time Chat Mobile app"
                 img="img/now-chat/icon.png"
                 type="Frontend Mobile"
-                icons={[RiFlutterFill, SiFirebase, FaAndroid, FaApple]}
+                icons={[{
+                  icon: RiFlutterFill,
+                  label: 'Flutter',
+                }, {
+                  icon: SiFirebase,
+                  label: 'Firebase',
+                }, {
+                  icon: FaAndroid,
+                  label: 'Android',
+                }, {
+                  icon: FaApple,
+                  label: 'iOS',
+                }]}
                 source="https://github.com/rhidra/now-talk">
       A pet project to learn Flutter, Firebase and Cloud Firestore.
       It uses the Firebase Real-Time services to easily build a Mobile app

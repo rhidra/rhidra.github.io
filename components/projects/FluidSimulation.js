@@ -6,8 +6,20 @@ export default function FluidSimulation() {
   return (
     <ProjectCard title="Fluid Simulation Experiment"
                 img="img/fluid/icon.png"
-                type="Frontend"
-                icons={[DiJavascript1, SiTypescript, SiWebgl, SiWebpack]}
+                type="Frontend Web"
+                icons={[{
+                  icon: DiJavascript1,
+                  label: 'Javascript',
+                }, {
+                  icon: SiTypescript,
+                  label: 'Typescript',
+                }, {
+                  icon: SiWebgl,
+                  label: 'WebGL',
+                }, {
+                  icon: SiWebpack,
+                  label: 'Webpack',
+                }]}
                 source="https://github.com/rhidra/fluid-simulation"
                 link="https://rhidra.github.io/fluid-simulation">
       A fun experiment between fluid mechanics and generative art. To make the 

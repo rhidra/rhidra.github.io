@@ -1,4 +1,4 @@
-import { Box, Image, Heading, Text, Icon, Button, Flex, Accordion, AccordionItem, AccordionButton, AccordionPanel } from "@chakra-ui/core";
+import { Box, Image, Heading, Text, Icon, Button, Flex, Accordion, AccordionItem, AccordionButton, AccordionPanel, SimpleGrid } from "@chakra-ui/core";
 import { Fragment } from "react";
 import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt} from 'react-icons/fa';
 
@@ -28,9 +28,13 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                        m={[4,8]} borderRadius="full" boxShadow="md"/>
 
                 <Box transition=".2s all" pt={[6, null, isExpanded ? 10 : 0]} pr={6}>
-                  <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1} lineHeight={1} mb={3} textAlign="left">{type}</Heading>
+                  <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1} lineHeight={1} mb={3} textAlign="left">
+                    {type}
+                  </Heading>
 
-                  <Heading as="h4" fontSize="md" textTransform="uppercase" lineHeight={5} mb={4} textAlign="left">{title}</Heading>
+                  <Heading as="h4" fontSize="md" textTransform="uppercase" lineHeight={5} mb={4} textAlign="left">
+                    {title}
+                  </Heading>
 
                   <AccordionPanel p={0}>
                     <Text fontSize="md" color="gray.500" mb={10} maxW="35em" textAlign="left" display={['none', 'none', 'block']}>
@@ -47,17 +51,10 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                   {children}
                 </Text>
 
-                <Flex flexDir="row" justifyContent="center">
-                  {icons.map((icon, key) => 
-                    <Fragment key={key}>
-                    {typeof(icon) !== 'string' && 
-                      <Icon as={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>
-                    }
-                    {typeof(icon) === 'string' && 
-                      <Image src={`/img/icons/${icon}`} alt={icon} color="black" boxSize="30px" mr={[1, 4]} ml={[1, 4]}/>
-                    }
-                    </Fragment>
-                  )}
+                <Flex justifyContent="center">
+                  <SimpleGrid columns={4} spacingX={5} spacingY={4}>
+                    {icons.map((icon, key) => <TechIcon icon={icon} key={key}/>)}
+                  </SimpleGrid>
                 </Flex>
 
                 <Flex justifyContent={['center', 'center', 'center', 'flex-end']} mt={[6, 6, 6, 0]}>
@@ -81,5 +78,22 @@ export default function ProjectCard({img, children, icons, title, type, link, so
         )}
       </AccordionItem>
     </Accordion>
+  );
+}
+
+function TechIcon({icon}) {
+  if (typeof(icon) === 'string') {
+    return <Image src={`/img/icons/${icon}`} alt={icon} color="black" boxSize="30px" mx={[1]}/>;
+  }
+
+  if (!icon.label) {
+    return <Icon as={icon} color="black" boxSize="30px" mx={[1]}/>;
+  }
+
+  return (
+    <Flex alignItems="center">
+      <Icon as={icon.icon} color="gray.500" opacity={.8} boxSize="25px" mr={[2]}/>
+      <Text fontSize="sm" color="gray.500">{icon.label}</Text>
+    </Flex>
   );
 }

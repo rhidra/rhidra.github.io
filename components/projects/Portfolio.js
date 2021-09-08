@@ -7,7 +7,13 @@ export default function Portfolio() {
     <ProjectCard title="Portfolio"
                 type="Frontend Web"
                 img="img/portfolio/icon.png"
-                icons={[FaReact, SiNextDotJs]}
+                icons={[{
+                  icon: FaReact,
+                  label: 'React',
+                }, {
+                  icon: SiNextDotJs,
+                  label: 'NextJS',
+                }]}
                 source="https://github.com/rhidra/rhidra.github.io"
                 link="https://rhidra.github.io">
       A simple portfolio made with React, NextJS and Chakra UI.
