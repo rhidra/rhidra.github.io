@@ -10,7 +10,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
   }
 
   return (
-    <Accordion allowMultiple mb={10}>
+    <Accordion allowMultiple mb={7}>
       <AccordionItem border="none">
         {({isExpanded}) => (
           <AccordionButton boxShadow="none !important">
@@ -25,7 +25,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                 <Image transition=".2s all" src={img} 
                        w={[20, isExpanded ? 32 : 20, isExpanded ? 32 : 20, isExpanded ? 40 : 20]} 
                        h={[20, isExpanded ? 32 : 20, isExpanded ? 32 : 20, isExpanded ? 40 : 20]} 
-                       m={[4, 12]} borderRadius="full" boxShadow="md"/>
+                       m={[4,8]} borderRadius="full" boxShadow="md"/>
 
                 <Box transition=".2s all" pt={[6, null, isExpanded ? 10 : 0]} pr={6}>
                   <Heading as="h3" fontSize="xs" textTransform="uppercase" letterSpacing={1} lineHeight={1} mb={3} textAlign="left">{type}</Heading>

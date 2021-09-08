@@ -1,4 +1,5 @@
-import { Container, Flex, Heading, Box, SimpleGrid, Text, Divider } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, SimpleGrid, Text, Divider, Button } from '@chakra-ui/core';
+import Link from 'next/link'
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
 import {RiFlutterFill} from 'react-icons/ri';
@@ -33,7 +34,7 @@ export default function Home() {
         <Skills/>
 
         <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={12}>
-          Work
+          Work Experiences
         </Heading>
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
@@ -105,7 +106,17 @@ export default function Home() {
             with official international ID verification, work contract e-signature, check-in/check-out,
             and administration at different level of authorization.
           </ProjectCard>
+        </Flex>
 
+        <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={2}>
+          Projects
+        </Heading>
+
+        <Heading as="h3" color="gray.500" fontSize={20} mb={12} fontStyle="oblique 10deg">
+          Side projects and student works
+        </Heading>
+
+        <Flex flexDir="column" alignItems="center" overflow="auto">
           <ProjectCard title="HLS Converter API"
                       img="img/hls/logo.png"
                       type="Fullstack"
@@ -139,6 +150,7 @@ export default function Home() {
             only vanilla JS was used, compiled from Typescript using a small Webpack configuration.
           </ProjectCard>
 
+          {/*
           <ProjectCard title="Real-time Chat Mobile app"
                       img="img/now-chat/icon.png"
                       type="Frontend Mobile"
@@ -150,7 +162,9 @@ export default function Home() {
             between two users. The app is cross-platform, with a flexible interface and could be
             expanded into a much more complex mobile app.
           </ProjectCard>
+          */}
 
+          {/* 
           <ProjectCard title="Peer-to-Peer Chat Web app"
                       img="img/now-chat/icon2.png"
                       type="Fullstack"
@@ -161,8 +175,10 @@ export default function Home() {
             It creates a P2P connection with an another user, using a Node.js signaling server, 
             which can then be used to transmit video, audio or any kind of data. 
             The web app integrates a simple chat room between users.
-          </ProjectCard>
+          </ProjectCard> 
+          */}
 
+          {/*
           <ProjectCard title="Portfolio"
                       type="Frontend Web"
                       img="img/portfolio/icon.png"
@@ -174,6 +190,7 @@ export default function Home() {
             strong external reference. The interface should also be SEO optimized and quickly
             readable by a potential client.
           </ProjectCard>
+          */}
 
           <ProjectCard title="Media la Mouette Web platform"
                       type="Backend"
@@ -185,6 +202,12 @@ export default function Home() {
             It also features automatic PDF generation of invoices and payments. 
             To coordinate the system through users, we implemented email and discord notifications.
           </ProjectCard>
+
+          <Link href="/projects">
+            <Button colorScheme="gray" cursor="pointer" className="btn" variant="outline" mr={3} as="span" href="">
+              More projects !
+            </Button>
+          </Link>
         </Flex>
 
         <Flex justify="center" id="education">

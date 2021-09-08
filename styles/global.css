@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .social-grp > .social-btn {
   color: white;
   border-radius: 0;
@@ -24,4 +20,12 @@ html {
 .social-grp > .social-btn:hover {
   background-color: white;
   color: #2D3748;
+}
+
+.btn {
+  color: HSL(22, 30%, 98%) !important;
+}
+
+.btn:hover {
+  color: HSL(46, 21%, 12%) !important;
 }
