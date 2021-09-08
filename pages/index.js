@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, Box, SimpleGrid, Text } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, SimpleGrid, Text, Divider } from '@chakra-ui/core';
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
 import {RiFlutterFill} from 'react-icons/ri';
@@ -187,7 +187,11 @@ export default function Home() {
           </ProjectCard>
         </Flex>
 
-        <Heading id="education" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
+        <Flex justify="center" id="education">
+          <Divider opacity="1" w="100px" mb={[10, 12]} mt={[6, 12]} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
+        </Flex>
+
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
           Education
         </Heading>
 
