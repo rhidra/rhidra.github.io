@@ -2,22 +2,27 @@ import { Flex, Heading, Text } from "@chakra-ui/core";
 import { Fragment } from "react";
 import { Strong } from "../typography";
 
-export default function EducationRow({children, title, year, degree}) {
+export default function EducationRow({children, title, year, degree, ...props}) {
   return (
-    <Flex flexDir="column" alignItems="flex-end">
-      <Heading as="h4" color="grey.300" fontSize="md" textAlign="right">
+    <Flex 
+      flexDir="column" 
+      mb={8} 
+      borderStyle="solid" borderLeftWidth={[0, 0, 4]} borderColor="red.500"
+      pl={[0, 0, 3]}
+      {...props}>
+      <Heading as="h4" color="grey.300" fontSize="md">
         <Degree degree={degree}/>
       </Heading>
       
-      <Heading as="h3" color="grey.300" textAlign="right">
+      <Heading as="h3" color="grey.300">
         {title}
       </Heading>
       
-      <Heading as="h5" color="grey.300" fontSize="md" textAlign="right">
+      <Heading as="h5" color="grey.300" fontSize="md">
         <Date date={year}/>
       </Heading>
 
-      <Text fontSize="md" color="grey.300" maxW="55ch" style={{textIndent: 20}} textAlign="right">
+      <Text fontSize="md" color="grey.300" maxW="55ch">
         {children}
       </Text>
     </Flex>
