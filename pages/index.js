@@ -36,7 +36,7 @@ export default function Home() {
 
         <Skills/>
 
-        <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={12}>
+        <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={12} lineHeight="3.5rem">
           Work Experiences
         </Heading>
 

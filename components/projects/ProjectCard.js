@@ -1,5 +1,4 @@
 import { Box, Image, Heading, Text, Icon, Button, Flex, Accordion, AccordionItem, AccordionButton, AccordionPanel, SimpleGrid } from "@chakra-ui/core";
-import { Fragment } from "react";
 import {FaCaretDown, FaCaretUp, FaCode, FaExternalLinkAlt} from 'react-icons/fa';
 
 export default function ProjectCard({img, children, icons, title, type, link, source}) {
@@ -13,7 +12,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
     <Accordion allowMultiple mb={7}>
       <AccordionItem border="none">
         {({isExpanded}) => (
-          <AccordionButton boxShadow="none !important">
+          <AccordionButton boxShadow="none !important" p={0}>
             <Flex 
               className="card"
               borderRadius="lg" bg="gray.50"
@@ -47,7 +46,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
               </Flex>
 
               <AccordionPanel>
-                <Text fontSize="md" color="gray.500" mb={10} pt={4} pl={4} pr={4} maxW="35em" textAlign="left" display={['block', 'block', 'none']}>
+                <Text fontSize="md" color="gray.500" mb={10} pt={4} px={[0, 2, 4]} maxW="35em" textAlign="left" display={['block', 'block', 'none']}>
                   {children}
                 </Text>
 

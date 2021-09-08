@@ -19,7 +19,7 @@ export default function Projects() {
           </Button>
         </Link>
 
-        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={12} mb={2}>
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={12} mb={2} lineHeight="3.5rem">
           All personal projects
         </Heading>
 
