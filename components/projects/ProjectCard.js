@@ -52,7 +52,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
                 </Text>
 
                 <Flex justifyContent="center">
-                  <SimpleGrid columns={4} spacingX={5} spacingY={4}>
+                  <SimpleGrid columns={[1, 2, 4, 5]} spacingX={5} spacingY={4}>
                     {icons.map((icon, key) => <TechIcon icon={icon} key={key}/>)}
                   </SimpleGrid>
                 </Flex>
