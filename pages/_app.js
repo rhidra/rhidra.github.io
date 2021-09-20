@@ -1,4 +1,4 @@
-import '../styles/global.css';
+import '../styles/global.scss';
 import { ChakraProvider } from '@chakra-ui/core';
 import Head from 'next/head';
 import theme from '../styles/theme';
