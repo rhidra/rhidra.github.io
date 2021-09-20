@@ -6,6 +6,7 @@ import FluidSimulation from "../components/projects/FluidSimulation";
 import NowTalk from "../components/projects/NowTalk";
 import NowChat from "../components/projects/NowChat";
 import Portfolio from "../components/projects/Portfolio";
+import RayMarching from "../components/projects/RayMarching";
 
 export default function Projects() {
   return (
@@ -30,6 +31,7 @@ export default function Projects() {
         <Flex flexDir="column" alignItems="center" overflow="auto">
           <HlsConverter/>
           <FluidSimulation/>
+          <RayMarching/>
           <NowTalk/>
           <NowChat/>
           <Portfolio/>
