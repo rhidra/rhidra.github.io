@@ -2,6 +2,7 @@ export default function Work() {
   return (
     <div className="work">
       <div class="mobile-wrapper">
+        <div className="outline"/>
         <img src="/img/clapback/phone.jpg" alt="Clapback"/>
       </div>
 
