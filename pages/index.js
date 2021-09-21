@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, Box, SimpleGrid, Text, Divider, Button } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, SimpleGrid, Text, Divider, Button, Image } from '@chakra-ui/core';
 import Link from 'next/link'
 import {FaNode, FaReact, FaAngular, FaDocker, FaPython, FaJs, FaJava, FaBootstrap, FaAndroid, FaApple} from 'react-icons/fa';
 import {DiIonic, DiMongodb, DiDjango, DiNginx, DiJavascript1} from 'react-icons/di';
@@ -17,6 +17,7 @@ import Education from '../components/education';
 import Mouette from '../components/projects/Mouette';
 import FluidSimulation from '../components/projects/FluidSimulation';
 import HlsConverter from '../components/projects/HlsConverter';
+import Work from '../components/works/Work';
 
 export default function Home() {
   return (
@@ -41,12 +42,13 @@ export default function Home() {
         </Heading>
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
+          <Work/>
 
           <ProjectCard title="拍手: New Media App in China"
                       type="Fullstack"
                       img="img/clapback/icon.png"
                       icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx, SiGooglecloud]}
-                      link="https://zuoyoubycurios.com">
+                      link="https://clapbacktheapp.com">
             A new media app, technically similar to TikTok, with social media interactions,
             users video upload and processing and a scalable infrastructure. As the only dev, 
             I had to build an app easy to iterate on and maintain, without any third party

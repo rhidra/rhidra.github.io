@@ -1,0 +1,52 @@
+// Same variables as the ones described in the Chakra UI theme file
+
+$textFont: Montserrat, sans-serif;
+$headingFont: Spartan, serif;
+
+$grey0: hsl(22, 30%, 98%);
+$grey1: hsl(24, 26%, 96%);
+$grey2: hsl(30, 22%, 91%);
+$grey3: hsl(28, 16%, 84%);
+$grey4: hsl(33, 14%, 69%);
+$grey5: hsl(34, 10%, 52%);
+$grey6: hsl(36, 11%, 35%);
+$grey7: hsl(35, 15%, 23%);
+$grey8: hsl(39, 19%, 14%);
+$grey9: hsl(46, 21%, 12%);
+
+$red0: hsl(350, 100%, 94%);
+$red1: hsl(350, 96%, 90%);
+$red2: hsl(350, 88%, 81%);
+$red3: hsl(351, 80%, 72%);
+$red4: hsl(352, 80%, 64%);
+$red5: hsl(352, 72%, 54%);
+$red6: hsl(352, 61%, 45%);
+$red7: hsl(352, 61%, 36%);
+$red8: hsl(352, 61%, 23%);
+$red9: hsl(351, 80%, 12%);
+
+$purple0: hsl(270, 75%, 97%);
+$purple1: hsl(263.5, 42.7%, 93.5%);
+$purple2: hsl(265, 64%, 87%);
+$purple3: hsl(264, 75%, 80%);
+$purple4: hsl(263, 56%, 57%);
+$purple5: hsl(263.5, 65.7%, 39.5%);
+$purple6: hsl(263.5, 65.7%, 27.5%);
+$purple7: hsl(269, 83%, 25%);
+$purple8: hsl(267, 88%, 16%);
+$purple9: hsl(264, 100%, 12%);
+
+$shadow-1: // Slight shadow for buttons
+  0 1px 2px hsla(0, 0, 0, 0.25),
+  0 2px 4px hsla(0, 0, 0, 0.1);
+$shadow-2: // Elevated buttons
+  1px 3px 4px hsla(0, 0, 0, 0.22), 
+  0   2px 1px hsla(0, 0, 0, 0.1);
+$shadow-3: // Cards
+  4px 5px 8px hsla(0, 0, 0, 0.2), 
+  0   2px 4px hsla(0, 0, 0, 0.1);
+$shadow-4: // Elevated cards
+  5px 8px 15px hsla(0, 0, 0, 0.2), 
+  2px 3px 4px  hsla(0, 0, 0, 0.15); 
+$shadow-5: // High content
+  3px 8px 20px hsla(0, 0, 0, 0.25);
