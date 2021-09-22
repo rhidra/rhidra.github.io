@@ -1,11 +1,11 @@
 import { DiIonic, DiMongodb, DiNginx } from "react-icons/di";
 import { FaAngular, FaDocker, FaNode } from "react-icons/fa";
 import { SiGooglecloud } from "react-icons/si";
-import Work from "./Work";
+import WorkSection from "./WorkSection";
 
 export function Clapback() {
   return (
-    <Work
+    <WorkSection
       subtitle={['Startup CTO', 'Fullstack']}
       title="Clapback: A new media app in China"
       img="/img/clapback/phone.jpg"
@@ -42,6 +42,6 @@ export function Clapback() {
       To let the non-technical team edit data, I built an <strong>Angular backoffice</strong>, which uses the same API as the mobile app.<br/>
       During this project, learned a lot in building a fullstack system ready for production 
       This creates a lot of constraints of distributed computing and it can consume a lot of resources.
-    </Work>
+    </WorkSection>
   );
 }

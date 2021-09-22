@@ -1,9 +1,9 @@
 import { Icon } from "@chakra-ui/core";
 
-export default function Work({subtitle, title, children, isRight, icons, img}) {
+export default function WorkSection({subtitle, title, children, isRight, icons, img}) {
   const rightClass = isRight ? 'right' : '';
   return (
-    <div className="work">
+    <section className="work">
       <div className={`mobile-wrapper ${rightClass}`}>
         <div className={`outline ${rightClass}`}/>
         <img src={img} alt={title}/>
@@ -32,6 +32,6 @@ export default function Work({subtitle, title, children, isRight, icons, img}) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

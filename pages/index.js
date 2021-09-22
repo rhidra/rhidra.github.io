@@ -17,7 +17,7 @@ import Education from '../components/education';
 import Mouette from '../components/projects/Mouette';
 import FluidSimulation from '../components/projects/FluidSimulation';
 import HlsConverter from '../components/projects/HlsConverter';
-import Work from '../components/works/Work';
+import WorkSection from '../components/works/WorkSection';
 import { Clapback } from '../components/works/Clapback';
 
 export default function Home() {
