@@ -1,6 +1,7 @@
-import { Icon, Image } from "@chakra-ui/core";
+import { Button, Icon, Image } from "@chakra-ui/core";
+import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function WorkSection({subtitle, title, children, isRight, icons, img}) {
+export default function WorkSection({subtitle, title, children, isRight, icons, img, link, src}) {
   const rightClass = isRight ? 'right' : '';
   return (
     <section className="work">
@@ -10,16 +11,35 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
       </div>
 
       <div className={`description ${rightClass}`}>
-        <h4 className="subtitle">
-          {subtitle[0]} 
-          {subtitle.length > 1 && 
-          <>
-            &nbsp;&nbsp;<span>//</span>&nbsp;&nbsp;
-            {subtitle[1]}
-          </>}
-        </h4>
+        <div className={`header-row ${rightClass}`}>
+          <div className="header-titles">
+            <h4 className="subtitle">
+              {subtitle[0]} 
+              {subtitle.length > 1 && 
+              <>
+                &nbsp;&nbsp;<span>//</span>&nbsp;&nbsp;
+                {subtitle[1]}
+              </>}
+            </h4>
+            <h3 className="title">{title}</h3>
+          </div>
+          
+          <div>
+            {link &&
+              <a className="external-link" href={link} target="_blank">
+                <Icon as={FaExternalLinkAlt} boxSize={5}/>&nbsp;
+              </a>
+            }
 
-        <h3 className="title">{title}</h3>
+            {src &&
+              <a className="external-link" href={src} target="_blank">
+                <Icon as={FaCode} boxSize={5}/>&nbsp;
+              </a>
+            }
+          </div>
+        </div>
+
+
 
         <p>{children}</p>
 

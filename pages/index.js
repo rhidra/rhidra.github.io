@@ -47,19 +47,6 @@ export default function Home() {
           <Clapback/>
           <Nestaur/>
 
-          {/* <ProjectCard title="Nestaur: KPI Visualization tool"
-                      type="Frontend"
-                      img="img/nestaur/logo.png"
-                      icons={[FaReact, SiMaterialUi, 'd3-black.svg', BiVector, SiSass]}
-                      link="https://nestaur.com">
-            I helped this startup re-build their entire front-end after a bad external team experience. 
-            As a tool for KPI monitoring, this product needed to display large amount of data, which 
-            should be usable for the user. I made this React app capable of running smoothly and intuitively. 
-            After solving various UX problems, I re-designed their entire interface to be responsive 
-            and tackled issues such as internationalization and dark mode. I learned a lot about complex UI 
-            problems, SVG graph generation and React features. We worked with an agile methodology.
-          </ProjectCard> */}
-
           <ProjectCard title="Kerlead: CRM Mobile App"
                       type="Frontend Mobile & Web"
                       img="img/kerlead/cover.png"

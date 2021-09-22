@@ -9,6 +9,7 @@ export function Clapback() {
       subtitle={['Startup CTO', 'Fullstack']}
       title="Clapback: A new media app in China"
       img="/img/clapback/phone.jpg"
+      link="https://clapbacktheapp.com"
       isRight={true}
       icons={[{
         icon: FaAngular,

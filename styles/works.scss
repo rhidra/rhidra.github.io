@@ -41,45 +41,75 @@ section.work {
   }
 
   .description {
+    $max-width: calc(55ch + 4rem);
+
     z-index: 10;
     color: $grey3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 2rem;
+    max-width: $max-width;
     
     &.right {
       align-items: flex-end;
+      margin-left: auto;
     }
 
-    h4.subtitle {
-      font-family: $headingFont;
-      font-weight: bold;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-bottom: 0.75rem;
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-direction: row;
 
-      span {
-        color: $red5;
+      &.right {
+        flex-direction: row-reverse;
+        .header-titles {
+          text-align: right;
+        }
+      }
+
+      h4.subtitle {
+        font-family: $headingFont;
+        font-weight: bold;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 0.75rem;
+
+        span {
+          color: $red5;
+        }
+      }
+
+      h3.title {
+        font-family: $headingFont;
+        font-weight: bold;
+        line-height: 1.25rem;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      a.external-link {
+        color: $grey2;
+        transition: all linear 150ms;
+        padding: .5rem;
+        margin: 0 .2rem;
+        border-radius: 8px;
+
+        &:hover {
+          background: $grey2;
+          color: $purple9;
+        }
       }
     }
 
-    h3.title {
-      font-family: $headingFont;
-      font-weight: bold;
-      line-height: 1.25rem;
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    $max-width: calc(60ch + 4rem);
     p {
       font-size: .95rem;
       color: rgba(white, .7);
       margin-bottom: 1rem;
-      max-width: $max-width;
       background: rgba($purple6, .9);
       padding: 2rem 2rem;
       border-radius: .5rem;
