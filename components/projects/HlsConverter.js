@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function HlsConverter() {
   return (
-    <ProjectCard title="HLS Converter API"
+    <ProjectCard title="HLS Video Converter API"
                 img="img/hls/logo.png"
                 type="Fullstack"
                 icons={[{
