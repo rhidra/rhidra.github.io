@@ -21,7 +21,7 @@ export function WorkOthers() {
         {selected === 0 &&
           <MainSection
             title="Kerlead: CRM Mobile App"
-            subtitle={['Frontend Mobile & Web']}
+            subtitle={['Internship', 'Frontend Mobile & Web']}
             icons={[
               { icon: FaAngular, label: 'Angular' }, 
               { icon: DiIonic, label: 'Ionic' }, 
@@ -40,7 +40,7 @@ export function WorkOthers() {
         {selected === 1 &&
           <MainSection
             title="MasterMined: AI legal document organizer"
-            subtitle={['Frontend Web']}
+            subtitle={['Freelance', 'Frontend Web']}
             icons={[
               { icon: FaReact, label: 'React' }, 
               { icon: SiNextDotJs, label: 'NodeJS' }, 
@@ -76,7 +76,7 @@ export function WorkOthers() {
         {selected === 2 &&
           <MainSection
             title="Time tracker Web App"
-            subtitle={['Fullstack']}
+            subtitle={['Freelance', 'Fullstack']}
             icons={[
               { icon: FaReact, label: 'React' }, 
               { icon: SiNextDotJs, label: 'NodeJS' }, 
@@ -106,13 +106,7 @@ export function WorkOthers() {
 
 function MainSection({title, subtitle, link, icons, children}) {
   return (
-    <WorkSection
-      title={title}
-      subtitle={subtitle}
-      link={link}
-      isRight={false}
-      icons={icons}
-    >
+    <WorkSection title={title} subtitle={subtitle} link={link} isRight={false} icons={icons}>
       {children}
     </WorkSection>
   );
