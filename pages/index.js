@@ -18,6 +18,7 @@ import Mouette from '../components/projects/Mouette';
 import FluidSimulation from '../components/projects/FluidSimulation';
 import HlsConverter from '../components/projects/HlsConverter';
 import Work from '../components/works/Work';
+import { Clapback } from '../components/works/Clapback';
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
         </Heading>
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
-          <Work/>
+          <Clapback/>
 
           <ProjectCard title="拍手: New Media App in China"
                       type="Fullstack"

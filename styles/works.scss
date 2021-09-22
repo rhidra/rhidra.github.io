@@ -1,28 +1,35 @@
 .work {
-  display: flex;
   position: relative;
   max-width: 1000px;
   width: 100%;
-  justify-content: flex-end;
   margin-bottom: 2rem;
   
   .mobile-wrapper {
     position: absolute;
-    z-index: 5;
-    left: 0;
+    right: 0;
     width: 240px;
     align-self: center;
+    z-index: 5;
+    
+    &.right {
+      left: 0;
+      right: inherit;
+    }
 
     .outline {
       $offset: 20px;
       z-index: -1;
-      position: absolute;
       width: 100%;
       height: 100%;
-      top: $offset;
-      right: $offset;
       border: 3px solid $purple5;
       border-radius: 8px;
+      position: absolute;
+      top: $offset;
+      left: $offset;
+      
+      &.right {
+        left: -$offset;
+      }
     }
 
     img {
@@ -36,7 +43,14 @@
   .description {
     z-index: 10;
     color: $grey3;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    
+    &.right {
+      align-items: flex-end;
+    }
 
     h4.subtitle {
       font-family: $headingFont;
@@ -60,12 +74,12 @@
       margin-bottom: 1rem;
     }
 
+    $max-width: calc(60ch + 4rem);
     p {
-      text-align: left;
       font-size: .95rem;
       color: rgba(white, .7);
-      margin-bottom: 2.5rem;
-      max-width: calc(60ch + 4rem);
+      margin-bottom: 1rem;
+      max-width: $max-width;
       background: rgba($purple6, .9);
       padding: 2rem 2rem;
       border-radius: .5rem;
@@ -74,6 +88,36 @@
       strong {
         font-weight: bold;
         color: $red5;
+      }
+    }
+
+    .tech-wrapper {
+      display: flex;
+      flex-direction: row;
+      max-width: $max-width;
+      flex-wrap: wrap;
+      padding-left: 2rem;
+      justify-content: flex-start;
+      
+      &.right {
+        justify-content: flex-end;
+        padding-left: 0;
+        padding-right: 2rem;
+        .tech {
+          margin-left: 3rem;
+          margin-right: 0;
+        }
+      }
+
+      .tech {
+        display: flex;
+        align-items: center;
+        margin: .5rem 0;
+        margin-right: 3rem;
+
+        span {
+          margin-left: .25rem;
+        }
       }
     }
   }
