@@ -52,7 +52,7 @@ export default function Home() {
         </Flex>
       </Box>
 
-      <Box w="100%">
+      <Box w="100%" mt={10}>
         <WorkOthers/>
 
           {/*
