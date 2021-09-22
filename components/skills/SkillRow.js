@@ -1,6 +1,14 @@
-import { Box, Heading, Text } from "@chakra-ui/core";
+import { Box, Heading, Text, useMediaQuery } from "@chakra-ui/core";
 
-export default function SkillRow({title, subtitle, w, maxW}) {
+export default function SkillRow({title, subtitle, w, maxW, link}) {
+  const [isMobile] = useMediaQuery("(max-width: 48em)");
+
+  function openLink(event, url) {
+    event.preventDefault();
+    event.stopPropagation();
+    window.open(url, '_blank');
+  }
+
   return (
     <Box
       pos="relative" 
@@ -10,6 +18,8 @@ export default function SkillRow({title, subtitle, w, maxW}) {
       role="group"
       bg="#2a095c"
       borderRadius="lg"
+      cursor={['inherit', 'inherit', isMobile ? 'inherit' : 'pointer']}
+      onClick={e => link && !isMobile ? openLink(e, link) : null}
     >
       <Box 
         w="100%" 
@@ -24,7 +34,7 @@ export default function SkillRow({title, subtitle, w, maxW}) {
         opacity="0"
         _groupHover={{
           // width: '100%',
-          opacity: 1,
+          opacity: isMobile ? 0 : 1,
         }}
       />
 
