@@ -51,7 +51,11 @@ export default function Home() {
       </Box>
 
       <Box w="100%" px={[5, 5, 5, 5, 150]}>
-        <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={2}>
+        <Flex justify="center" id="projects">
+          <Divider opacity="1" w="100px" mb={[10, 12]} mt={[6, 12]} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
+        </Flex>
+
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={2}>
           Projects
         </Heading>
 

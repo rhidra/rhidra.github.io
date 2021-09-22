@@ -1,20 +1,20 @@
 import { Box, Heading, Text } from "@chakra-ui/core";
 
-export default function SkillRow({title, subtitle}) {
+export default function SkillRow({title, subtitle, w, maxW}) {
   return (
     <Box
       pos="relative" 
-      borderTop="1px" 
-      borderBottom="1px" 
-      borderTopColor="purple.900" 
       px={6} py={3} 
+      w={w} maxW={maxW}
       overflow="hidden"
       role="group"
+      bg="#2a095c"
+      borderRadius="lg"
     >
       <Box 
-        w="8px" 
+        w="100%" 
         h="100%" 
-        bg="red.500" 
+        bg="red.700" 
         pos="absolute" 
         left="0" 
         top="0"
