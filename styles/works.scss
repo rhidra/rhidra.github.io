@@ -4,7 +4,7 @@ section.work {
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   
   .mobile-wrapper {
     position: absolute;
@@ -127,6 +127,12 @@ section.work {
       box-shadow: $shadow-4;
       position: relative;
       overflow: hidden;
+
+      button.ellipsis {
+        color: $grey3;
+        text-decoration: underline;
+        opacity: .5;
+      }
 
       @include mobile-lg {
         padding: 1.5rem 1rem;

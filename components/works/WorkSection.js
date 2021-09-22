@@ -1,7 +1,13 @@
-import { Button, Icon, Image } from "@chakra-ui/core";
+import { Icon, Image } from "@chakra-ui/core";
+import { useState } from "react";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function WorkSection({subtitle, title, children, isRight, icons, img, link, src, logo}) {
+  const longText = children[0];
+  const shortText = children[1];
+
+  const [isTruncated, setIsTruncated] = useState(true);
+
   const rightClass = isRight ? 'right' : '';
   return (
     <section className="work">
@@ -42,7 +48,13 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
 
 
         <p>
-          {children}
+          {isTruncated && 
+          <>
+            {shortText}
+            <br/><button className="ellipsis" onClick={() => setIsTruncated(false)}>Show more</button>
+          </>}
+          {!isTruncated && longText}
+
           {logo &&
             <img className="bg-img" src={logo} alt="logo"/>
           }

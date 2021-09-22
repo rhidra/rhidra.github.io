@@ -5,7 +5,7 @@ import config from "../../config";
 export default function Navbar() {
   return (
     <DarkMode>
-      <Flex display={['none', 'flex']} pos="fixed" zIndex="10" w="100%" h="85px" direction="row-reverse" p={4} 
+      <Flex display={['none', 'flex']} pos="fixed" zIndex="20" w="100%" h="85px" direction="row-reverse" p={4} 
             background="linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 100%)">
         <Button variant="ghost" mr={3} as="a" href="#contact">
           Contact

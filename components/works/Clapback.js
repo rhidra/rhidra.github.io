@@ -35,13 +35,18 @@ export function Clapback() {
         label: 'Google Cloud',
       }, ]}
     >
-
+    <>
       A new media app, technically similar to TikTok, with <strong>social media</strong> interactions,
       users <strong>video upload and processing</strong> and a scalable infrastructure. As the only engineer, 
       I had to build an app easy to <strong>iterate</strong> on and <strong>maintain</strong>, without any third party
       technologies potentially blocked in China.<br/>
       The backend supports a <strong>REST API</strong> and <strong>offline video encoding</strong>. 
-      To let the non-technical team edit data, I built an <strong>Angular backoffice</strong>.<br/>
+      To let the non-technical team edit data, I built an <strong>Angular backoffice</strong>.
+    </>
+    <>
+      A new media app, technically similar to TikTok, with <strong>social media</strong> interactions,
+      users <strong>video upload and processing</strong> and a scalable infrastructure.
+    </>
     </WorkSection>
   );
 }
