@@ -14,7 +14,7 @@ export default function Projects() {
     <Container maxWidth="100%" p="0" bg="purple.900">
       <Box w="100%" minHeight="150vh" pt={[5, 8]} px={[2, 5, 10]}>
 
-        <Link href="/">
+        <Link href="/#projects">
           <Button colorScheme="gray" cursor="pointer" className="btn" variant="outline" mr={3} as="span" href="">
             Back
           </Button>

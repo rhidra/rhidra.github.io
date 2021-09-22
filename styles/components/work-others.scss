@@ -1,3 +1,5 @@
+@use '../mixins' as *;
+
 .work-others {
   overflow-x: hidden;
   .collapsible {
@@ -14,12 +16,18 @@
     border-top: 4px solid $red3;
     border-bottom: 4px solid $red3;
     box-shadow: inset 0 3px 5px hsla(0, 0%, 0%, .3), inset 0 4px 50px hsla(0, 0%, 0%, 0.2);
+    margin-top: 4rem;
+
+    @include mobile-lg {
+      margin-top: 0;
+    }
 
     .work {
-      margin: 1rem 0;
+      margin: 1rem 1rem;
     }
 
     &.collapsed {
+      margin-top: 0;
       min-height: 0px;
       max-height: 0px;
       border: none;
@@ -34,6 +42,10 @@
     overflow-x: auto;
     justify-content: center;
 
+    @include mobile-lg {
+      margin-top: 1rem;
+    }
+
     .card {
       border-radius: 0.5rem;
       background: rgba($purple5, .2);
@@ -43,7 +55,16 @@
       border-radius: 8px;
       margin: 0 2rem;
       cursor: pointer;
-      transition: background 100ms linear;
+      transition: all 100ms linear;
+
+      @include mobile-lg {
+        padding: 1rem;
+        margin: 0 .5rem;
+        img {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
 
       &:hover {
         background: rgba($red5, .5);

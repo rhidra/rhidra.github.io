@@ -103,7 +103,7 @@ export default function Home() {
       </Box>
 
       <Box w="100%" px={[5, 5, 5, 5, 150]}>
-        <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={2}>
+        <Heading id="projects" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={2}>
           Projects
         </Heading>
 
