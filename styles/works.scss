@@ -5,6 +5,14 @@ section.work {
   max-width: 1000px;
   width: 100%;
   margin-bottom: 8rem;
+
+  @include tablet {
+    margin-bottom: 5rem;
+  }
+
+  @include mobile-lg {
+    margin-bottom: 3rem;
+  }
   
   .mobile-wrapper {
     position: absolute;
@@ -35,6 +43,15 @@ section.work {
       
       &.right {
         left: -$offset;
+      }
+
+      @include laptop {
+        top: $offset/2;
+        left: $offset/2;
+        border-width: 2px;
+        &.right {
+          left: -$offset/2;
+        }
       }
     }
 
@@ -131,7 +148,7 @@ section.work {
       button.ellipsis {
         color: $grey3;
         text-decoration: underline;
-        opacity: .5;
+        opacity: .3;
       }
 
       @include mobile-lg {
@@ -169,6 +186,7 @@ section.work {
       justify-content: flex-start;
       padding-left: 2rem;
       opacity: .8;
+      font-size: .9rem;
 
       .tech {
         display: flex;

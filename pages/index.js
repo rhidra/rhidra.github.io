@@ -44,7 +44,7 @@ export default function Home() {
           Work Experiences
         </Heading>
 
-        <Flex flexDir="column" alignItems="center" overflow="auto">
+        <Flex flexDir="column" alignItems="center">
           <Clapback/>
           <Nestaur/>
           <Thesis/>
