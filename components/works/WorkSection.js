@@ -1,7 +1,7 @@
 import { Button, Icon, Image } from "@chakra-ui/core";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function WorkSection({subtitle, title, children, isRight, icons, img, link, src}) {
+export default function WorkSection({subtitle, title, children, isRight, icons, img, link, src, logo}) {
   const rightClass = isRight ? 'right' : '';
   return (
     <section className="work">
@@ -41,7 +41,12 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
 
 
 
-        <p>{children}</p>
+        <p>
+          {children}
+          {logo &&
+            <img className="bg-img" src={logo} alt="logo"/>
+          }
+        </p>
 
         <div className={`tech-wrapper ${rightClass}`}>
           {icons.map(({icon, src, label}, idx) => (

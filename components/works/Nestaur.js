@@ -9,6 +9,7 @@ export function Nestaur() {
       title="Nestaur: KPI Visualization tool"
       subtitle={['Freelance', 'Frontend']}
       img="img/nestaur/logo.png"
+      logo="img/nestaur/logo.png"
       link="https://nestaur.com"
       isRight={false}
       icons={[{
