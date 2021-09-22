@@ -23,7 +23,7 @@ export default function Header() {
               <br/> 
               I'm&nbsp;
               <Text as="span" color="red.500">Rémy Hidra</Text>&nbsp; 
-              <Text as="span" textShadow="1px 1px 4px HSL(34, 10%, 52%)">👋</Text>
+              <Text as="span" textShadow="1px 1px 3px HSL(34, 10%, 32%)">👋</Text>
               <br/> 
               Let's build your <Text as="span" color="red.500">project</Text> together !
             </Heading>
@@ -49,8 +49,9 @@ export default function Header() {
             </Text>
 
             <Text maxW="50ch" color="rgba(74, 72, 67, 0.93)">
-              With a Master of Research in Robotics, I love maths and hardcore tech problems. But I also like to improve
-              design and user experience of software, to build a more human-centered tech.
+              With a Master of Research in Robotics and a strong web freelance experience, 
+              I build creative software focused on design and user experience.<br/>
+              <strong>Currently looking for a job out of Europe.</strong>
             </Text>
           </Flex>
         </Flex>
