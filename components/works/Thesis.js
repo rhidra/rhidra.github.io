@@ -11,6 +11,7 @@ export function Thesis({addMargin}) {
       subtitle={['Master Thesis', 'Robotics']}
       img="img/nestaur/logo.png"
       src="https://github.com/rhidra/autopilot"
+      link="https://github.com/rhidra/autopilot/raw/master/Thesis.pdf"
       isRight={true}
       addMargin={addMargin}
       icons={[{
