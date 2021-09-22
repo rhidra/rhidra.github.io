@@ -21,6 +21,7 @@ import WorkSection from '../components/works/WorkSection';
 import { Clapback } from '../components/works/Clapback';
 import { Nestaur } from '../components/works/Nestaur';
 import { Thesis } from '../components/works/Thesis';
+import { WorkOthers } from '../components/works/WorkOthers';
 
 export default function Home() {
   return (
@@ -45,10 +46,16 @@ export default function Home() {
         </Heading>
 
         <Flex flexDir="column" alignItems="center">
-          <Clapback/>
-          <Nestaur/>
+          <Clapback addMargin={true}/>
+          <Nestaur addMargin={true}/>
           <Thesis/>
+        </Flex>
+      </Box>
 
+      <Box w="100%">
+        <WorkOthers/>
+
+          {/*
           <ProjectCard title="Kerlead: CRM Mobile App"
                       type="Frontend Mobile & Web"
                       img="img/kerlead/cover.png"
@@ -92,8 +99,10 @@ export default function Home() {
             with official international ID verification, work contract e-signature, check-in/check-out,
             and administration at different level of authorization.
           </ProjectCard>
-        </Flex>
+          */}
+      </Box>
 
+      <Box w="100%" px={[5, 5, 5, 5, 150]}>
         <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={2}>
           Projects
         </Heading>

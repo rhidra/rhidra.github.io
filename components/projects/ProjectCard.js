@@ -14,7 +14,6 @@ export default function ProjectCard({img, children, icons, title, type, link, so
         {({isExpanded}) => (
           <AccordionButton boxShadow="none !important" p={0}>
             <Flex 
-              className="card"
               borderRadius="lg" bg="gray.50"
               boxShadow="base" maxW="5xl"
               flexDir="column"
@@ -80,7 +79,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
   );
 }
 
-function TechIcon({icon}) {
+export function TechIcon({icon}) {
   if (typeof(icon) === 'string') {
     return <Image src={`/img/icons/${icon}`} alt={icon} color="black" boxSize="30px" mx={[1]}/>;
   }

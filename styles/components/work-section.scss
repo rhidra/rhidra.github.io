@@ -4,14 +4,17 @@ section.work {
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin-bottom: 8rem;
 
-  @include tablet {
-    margin-bottom: 5rem;
-  }
+  &.margin {
+    margin-bottom: 9rem;
 
-  @include mobile-lg {
-    margin-bottom: 3rem;
+    @include tablet {
+      margin-bottom: 5rem;
+    }
+
+    @include mobile-lg {
+      margin-bottom: 3rem;
+    }
   }
   
   .mobile-wrapper {
@@ -72,7 +75,6 @@ section.work {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 2rem;
     max-width: $max-width;
     
     &.right {

@@ -3,7 +3,7 @@ import { FaAngular, FaDocker, FaNode } from "react-icons/fa";
 import { SiGooglecloud, SiNginx } from "react-icons/si";
 import WorkSection from "./WorkSection";
 
-export function Clapback() {
+export function Clapback({addMargin}) {
   return (
     <WorkSection
       subtitle={['Startup CTO', 'Fullstack']}
@@ -12,6 +12,7 @@ export function Clapback() {
       logo="/img/clapback/icon.png"
       link="https://clapbacktheapp.com"
       isRight={true}
+      addMargin={addMargin}
       icons={[{
         icon: FaAngular,
         label: 'Angular',

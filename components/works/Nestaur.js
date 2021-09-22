@@ -3,7 +3,7 @@ import { FaReact } from "react-icons/fa";
 import { SiMaterialUi, SiSass } from "react-icons/si";
 import WorkSection from "./WorkSection";
 
-export function Nestaur() {
+export function Nestaur({addMargin}) {
   return (
     <WorkSection
       title="Nestaur: KPI Visualization tool"
@@ -12,6 +12,7 @@ export function Nestaur() {
       logo="img/nestaur/logo.png"
       link="https://nestaur.com"
       isRight={false}
+      addMargin={addMargin}
       icons={[{
         icon: FaReact,
         label: 'React',
