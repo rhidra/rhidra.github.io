@@ -1,4 +1,4 @@
-import { Icon } from "@chakra-ui/core";
+import { Icon, Image } from "@chakra-ui/core";
 
 export default function WorkSection({subtitle, title, children, isRight, icons, img}) {
   const rightClass = isRight ? 'right' : '';
@@ -24,9 +24,14 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
         <p>{children}</p>
 
         <div className={`tech-wrapper ${rightClass}`}>
-          {icons.map(({icon, label}, idx) => (
+          {icons.map(({icon, src, label}, idx) => (
             <div className="tech" key={idx}>
-              <Icon as={icon} boxSize="30px" mr={1}/>
+              {icon &&
+                <Icon as={icon} boxSize="30px" mr={1}/>
+              }
+              {src &&
+                <Image src={`/img/icons/${src}`} alt={src} boxSize="30px" mx={1}/>
+              }
               <span>{label}</span>
             </div>
           ))}

@@ -1,6 +1,6 @@
 import { DiIonic, DiMongodb, DiNginx } from "react-icons/di";
 import { FaAngular, FaDocker, FaNode } from "react-icons/fa";
-import { SiGooglecloud } from "react-icons/si";
+import { SiGooglecloud, SiNginx } from "react-icons/si";
 import WorkSection from "./WorkSection";
 
 export function Clapback() {
@@ -26,8 +26,8 @@ export function Clapback() {
         icon: FaDocker,
         label: 'Docker',
       }, {
-        icon: DiNginx,
-        label: 'NGinx',
+        icon: SiNginx,
+        label: 'NGINX',
       }, {
         icon: SiGooglecloud,
         label: 'Google Cloud',
@@ -39,9 +39,7 @@ export function Clapback() {
       I had to build an app easy to <strong>iterate</strong> on and <strong>maintain</strong>, without any third party
       technologies potentially blocked in China.<br/>
       The backend supports a <strong>REST API</strong> and <strong>offline video encoding</strong>. 
-      To let the non-technical team edit data, I built an <strong>Angular backoffice</strong>, which uses the same API as the mobile app.<br/>
-      During this project, learned a lot in building a fullstack system ready for production 
-      This creates a lot of constraints of distributed computing and it can consume a lot of resources.
+      To let the non-technical team edit data, I built an <strong>Angular backoffice</strong>.<br/>
     </WorkSection>
   );
 }

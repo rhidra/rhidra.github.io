@@ -19,6 +19,7 @@ import FluidSimulation from '../components/projects/FluidSimulation';
 import HlsConverter from '../components/projects/HlsConverter';
 import WorkSection from '../components/works/WorkSection';
 import { Clapback } from '../components/works/Clapback';
+import { Nestaur } from '../components/works/Nestaur';
 
 export default function Home() {
   return (
@@ -44,19 +45,9 @@ export default function Home() {
 
         <Flex flexDir="column" alignItems="center" overflow="auto">
           <Clapback/>
+          <Nestaur/>
 
-          <ProjectCard title="拍手: New Media App in China"
-                      type="Fullstack"
-                      img="img/clapback/icon.png"
-                      icons={[FaAngular, DiIonic, FaNode, DiMongodb, FaDocker, DiNginx, SiGooglecloud]}
-                      link="https://clapbacktheapp.com">
-            A new media app, technically similar to TikTok, with social media interactions,
-            users video upload and processing and a scalable infrastructure. As the only dev, 
-            I had to build an app easy to iterate on and maintain, without any third party
-            technologies potentially blocked in China.
-          </ProjectCard>
-
-          <ProjectCard title="Nestaur: KPI Visualization tool"
+          {/* <ProjectCard title="Nestaur: KPI Visualization tool"
                       type="Frontend"
                       img="img/nestaur/logo.png"
                       icons={[FaReact, SiMaterialUi, 'd3-black.svg', BiVector, SiSass]}
@@ -67,7 +58,7 @@ export default function Home() {
             After solving various UX problems, I re-designed their entire interface to be responsive 
             and tackled issues such as internationalization and dark mode. I learned a lot about complex UI 
             problems, SVG graph generation and React features. We worked with an agile methodology.
-          </ProjectCard>
+          </ProjectCard> */}
 
           <ProjectCard title="Kerlead: CRM Mobile App"
                       type="Frontend Mobile & Web"
@@ -75,8 +66,8 @@ export default function Home() {
                       icons={[FaAngular, DiIonic, FaJava, DiMongodb]}>
             I built a CRM mobile app, and connected it to its Java back-end API.
             Using Ionic 4 and Angular 2, the UI is efficient, inspired by the 
-            current CRM web app, but adapted to a mobile environment. 
-            The app was be tested on Android and iOS, on smartphone and tablet. 
+            current CRM web app, but adapted to a mobile environment.
+            The app was be tested on Android and iOS, on smartphone and tablet.
           </ProjectCard>
 
           <ProjectCard title="MasterMined: AI legal document organizer"
