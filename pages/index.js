@@ -20,6 +20,7 @@ import HlsConverter from '../components/projects/HlsConverter';
 import WorkSection from '../components/works/WorkSection';
 import { Clapback } from '../components/works/Clapback';
 import { Nestaur } from '../components/works/Nestaur';
+import { Thesis } from '../components/works/Thesis';
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
         <Flex flexDir="column" alignItems="center" overflow="auto">
           <Clapback/>
           <Nestaur/>
+          <Thesis/>
 
           <ProjectCard title="Kerlead: CRM Mobile App"
                       type="Frontend Mobile & Web"
