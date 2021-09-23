@@ -14,9 +14,10 @@
     width: 105%;
     transform: translateX(-2.5%);
     align-items: center;
-    max-height: 600px;
+    max-height: 650px;
     min-height: 450px;
     box-shadow: inset 0 15px 100px hsla(0, 0%, 0%, 0.8), inset 0 8px 10px hsla(0, 0%, 0%, .8);
+    padding: 0 2.5%;
 
     @include mobile-lg {
       margin-top: 0;
