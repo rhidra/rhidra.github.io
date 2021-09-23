@@ -11,6 +11,7 @@ export function Clapback({addMargin}) {
       img="/img/clapback/phone.jpg"
       logo="/img/clapback/icon.png"
       link="https://clapbacktheapp.com"
+      src="https://github.com/rhidra/clapback-backend"
       isRight={true}
       addMargin={addMargin}
       icons={[{
