@@ -88,13 +88,21 @@ export default function Home() {
 
         <Education/>
 
-        <Heading id="about" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
+        <Flex justify="center" id="about">
+          <Divider opacity="1" w="100px" mb={[10, 12]} mt={[6, 12]} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
+        </Flex>
+
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={6} mb={8}>
           About me
         </Heading>
 
         <About/>
 
-        <Heading id="contact" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
+        <Flex justify="center" id="contact">
+          <Divider opacity="1" w="100px" mb={[10, 12]} mt={[6, 12]} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
+        </Flex>
+
+        <Heading color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mb={12}>
           Contact
         </Heading>
 
