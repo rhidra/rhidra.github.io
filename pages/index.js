@@ -35,7 +35,7 @@ export default function Home() {
 
         <Skills/>
 
-        <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={8} mb={12} lineHeight="3.5rem">
+        <Heading id="work" color="red.500" textShadow="0px 3px 3px #111" fontSize={50} mt={24} mb={12} lineHeight="3.5rem">
           Work Experiences
         </Heading>
 
@@ -45,6 +45,8 @@ export default function Home() {
           <Thesis/>
         </Flex>
       </Box>
+
+      <Box w="100%" mt={24}/>
 
       <Box w="100%" mt={10}>
         <WorkOthers/>

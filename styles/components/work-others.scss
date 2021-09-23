@@ -2,21 +2,21 @@
 
 .work-others {
   overflow-x: hidden;
+
   .collapsible {
     background: $red7;
     color: $grey8;
-    transition: all 400ms linear;
+    transition: all 600ms cubic-bezier(.55,.09,.68,.53);
     overflow: hidden;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 600px;
-    min-height: 400px;
+    min-height: 450px;
     border-top: 4px solid $red3;
     border-bottom: 4px solid $red3;
     box-shadow: inset 0 3px 5px hsla(0, 0%, 0%, .3), inset 0 4px 50px hsla(0, 0%, 0%, 0.2);
-    margin-top: 4rem;
 
     @include mobile-lg {
       margin-top: 0;

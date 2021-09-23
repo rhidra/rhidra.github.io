@@ -4,8 +4,11 @@ section.work {
   position: relative;
   max-width: 1000px;
   width: 100%;
-
+  display: flex;
+  align-items: center;
+  
   &.margin {
+    min-height: 50vh;
     margin-bottom: 9rem;
 
     @include tablet {
