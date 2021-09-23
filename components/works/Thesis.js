@@ -39,18 +39,19 @@ export function Thesis({addMargin}) {
       }]}
     >
     <>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id augue varius tortor cursus laoreet. 
-      Maecenas sagittis dictum leo, nec sollicitudin libero mattis ut. Integer mauris nisi, molestie vitae 
-      mauris eu, egestas feugiat nibh. Fusce tincidunt purus mi, sit amet accumsan enim condimentum id. 
-      Etiam vitae ultricies leo. Duis mauris ante, elementum at massa non, egestas luctus mauris. Morbi 
-      in luctus lorem, eu cursus mauris. Aliquam vitae porta mi, nec venenatis eros. Sed quis ullamcorper 
-      diam. Etiam consectetur, est in lacinia lobortis, massa metus vulputate nisi, eu volutpat mauris urna 
-      ac nibh. Fusce egestas quam libero, consectetur iaculis nisl venenatis non. 
+      For my Master Thesis at SJTU, I worked on building a flexible <strong>UAV navigation system</strong>.
+      The algorithm works in simulation in <strong>real-time</strong> and is optimized for <strong>re-planning</strong> scenarios.
+      It implements an incremental global planner based on the path planning <strong>3D Phi*</strong> algorithm, which
+      is ideal for large and partially known environments.<br/>
+      We also implemented a local planner based on a fast <strong>motion primitive generation</strong> algorithm and
+      a <strong>sequential optimization</strong> method, which has a fast convergence and an easily tunable cost function.<br/>
+      We evaluated this framework in a large <strong>benchmark</strong>, with our own experimental protocol, and obtained
+      very satisfying results. Thanks to our flexible implementation, using ROS, PX4 and MAVROS, our 
+      algorithm could be easily used with a real-world UAV without changing the module too much.
     </>
     <>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id augue varius tortor cursus laoreet. 
-      Maecenas sagittis dictum leo, nec sollicitudin libero mattis ut. Integer mauris nisi, molestie vitae 
-      mauris eu, egestas feugiat nibh.
+      For my Master Thesis at SJTU, I worked on building a flexible <strong>UAV navigation system</strong>.
+      The algorithm works in simulation in <strong>real-time</strong> and is optimized for <strong>re-planning</strong> scenarios.
     </>
     </WorkSection>
   );
