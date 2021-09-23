@@ -8,7 +8,8 @@ export function Nestaur({addMargin}) {
     <WorkSection
       title="Nestaur: KPI Visualization tool"
       subtitle={['Freelance', 'Frontend']}
-      img="img/nestaur/logo.png"
+      img="img/nestaur/tablet.png"
+      imgSize={400}
       logo="img/nestaur/logo.png"
       link="https://nestaur.com"
       isRight={false}

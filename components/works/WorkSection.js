@@ -2,7 +2,7 @@ import { Icon, Image } from "@chakra-ui/core";
 import { useEffect, useState } from "react";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function WorkSection({subtitle, title, children, isRight, icons, img, link, src, logo, addMargin}) {
+export default function WorkSection({subtitle, title, children, isRight, icons, img, link, src, logo, addMargin, imgSize}) {
   const [longText, shortText] = children.length > 1 ? children : [children, null];
 
   const [isTruncated, setIsTruncated] = useState(true);
@@ -13,7 +13,7 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
   return (
     <section className={`work ${addMargin ? 'margin' : ''}`}>
       {img &&
-        <div className={`mobile-wrapper ${rightClass}`}>
+        <div className={`mobile-wrapper ${rightClass}`} style={{width: imgSize ? `${imgSize}px` : null}}>
           <div className={`outline ${rightClass}`}/>
           <img src={img} alt={title}/>
         </div>
