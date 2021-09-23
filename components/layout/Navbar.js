@@ -31,9 +31,6 @@ export default function Navbar() {
       <Flex display={['none', 'flex']} alignItems="center" pos="fixed" zIndex="20" w="100%" h="70px" direction="row-reverse" px={4} 
             background="linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 100%)"
             transform={showNav ? 'translateY(0%)' : 'translateY(-100%)'} transition="transform linear 200ms">
-        <Button variant="ghost" mr={3} as="a" href="#contact">
-          Contact
-        </Button>
         <Button variant="ghost" mr={3} as="a" href="#about">
           About
         </Button>
