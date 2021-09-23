@@ -4,7 +4,7 @@
   overflow-x: hidden;
 
   .collapsible {
-    background: $purple10;
+    background: $purple9;
     color: $grey8;
     transition: all 600ms cubic-bezier(.55,.09,.68,.53);
     overflow: hidden;
@@ -16,7 +16,7 @@
     align-items: center;
     max-height: 650px;
     min-height: 450px;
-    box-shadow: inset 0 15px 100px hsla(0, 0%, 0%, 0.8), inset 0 8px 10px hsla(0, 0%, 0%, .8);
+    box-shadow: inset 0 5px 110px hsla(0, 0%, 0%, 0.5), inset 0 5px 10px hsla(0, 0%, 0%, 0.3);
     padding: 0 2.5%;
 
     @include mobile-lg {
