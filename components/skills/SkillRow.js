@@ -16,10 +16,10 @@ export default function SkillRow({title, subtitle, w, maxW, link}) {
       w={w} maxW={maxW}
       overflow="hidden"
       role="group"
-      bg="#2a095c"
+      bg="purple.600"
       borderRadius="lg"
-      cursor={['inherit', 'inherit', isMobile ? 'inherit' : 'pointer']}
-      onClick={e => link && !isMobile ? openLink(e, link) : null}
+      // cursor={['inherit', 'inherit', isMobile ? 'inherit' : 'pointer']}
+      // onClick={e => link && !isMobile ? openLink(e, link) : null}
     >
       <Box 
         w="100%" 
