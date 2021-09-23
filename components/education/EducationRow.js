@@ -8,7 +8,7 @@ export default function EducationRow({children, title, year, degree, ...props}) 
       flexDir="column" 
       mb={4} 
       borderStyle="solid" borderLeftWidth={[0, 0, 4]} borderColor="red.500"
-      bg={['none', 'none', 'linear-gradient(90deg, rgba(222,53,76,.3) 0%, rgba(222,53,76,0) 70%)']}
+      bg={['none', 'none', 'linear-gradient(90deg,  hsla(263deg, 56%, 57%, .3) 0%, hsla(263deg, 56%, 57%,0) 70%)']}
       boxShadow={['none', 'none', 'inset 6px 0 3px rgba(0,0,0,0.4)']}
       py={3}
       pl={[0, 0, 3]}
