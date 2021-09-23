@@ -9,10 +9,11 @@ export function Thesis({addMargin}) {
     <WorkSection
       title="Simulated UAV Navigation Algorithm"
       subtitle={['Master Thesis', 'Robotics']}
-      img="img/nestaur/logo.png"
+      img="img/thesis/demo.gif"
       src="https://github.com/rhidra/autopilot"
       link="https://github.com/rhidra/autopilot/raw/master/Thesis.pdf"
       isRight={true}
+      imgSize={400}
       addMargin={addMargin}
       icons={[{
         src: 'ros_logo_white.png',
