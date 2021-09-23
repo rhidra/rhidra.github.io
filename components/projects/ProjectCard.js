@@ -14,7 +14,7 @@ export default function ProjectCard({img, children, icons, title, type, link, so
         {({isExpanded}) => (
           <AccordionButton boxShadow="none !important" p={0}>
             <Flex 
-              borderRadius="lg" bg="gray.50"
+              borderRadius="lg" bg="gray.200"
               boxShadow="base" maxW="5xl"
               flexDir="column"
               pb={2}
