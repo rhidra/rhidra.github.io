@@ -116,7 +116,7 @@ export function WorkOthers() {
 
       <div className="cards-wrapper">
         {iconList.map((icon, idx) => (
-          <CardButton img={icon} onClick={() => setSelected(idx)} key={idx} isSelected={selected === idx}/>
+          <CardButton img={icon} onClick={() => setSelected(s => s === idx ? undefined : idx)} key={idx} isSelected={selected === idx}/>
         ))}
       </div>
     </div>
