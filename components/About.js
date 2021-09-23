@@ -5,7 +5,7 @@ export function About() {
   return (
     <SimpleGrid columns={[1, 1, 2]} mb={12} justifyItems="center">
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
-        I am Rémy, a <Strong>software engineer</Strong> and a part-time student pursuing a Masters degree in Telecommunications 
+        I am Rémy, a <Strong>software engineer</Strong>, who graduated from a Masters degree in Telecommunications 
         and Navigation Systems at <Strong>Shanghai Jiao Tong University</Strong> and <Strong>INSA Lyon</Strong>.
       </Paragraph>
       
@@ -19,8 +19,8 @@ export function About() {
         complex infrastructures. With a good experience designing production systems, I am capable of
         building a secure, efficient and responsive <Strong>Web and Mobile based solution</Strong>. 
         I have experience with modern technologies
-        like <Strong>NodeJS</Strong>, <Strong>ReactJS</Strong>, <Strong>React-Native</Strong>, <Strong>MongoDB</Strong>, 
-        <Strong> Angular</Strong>, <Strong>Ionic</Strong>, <Strong>Python</Strong>, <Strong>Docker</Strong> and <Strong>Sass</Strong>.
+        like <Strong>NodeJS</Strong>, <Strong>ReactJS</Strong>, <Strong>MongoDB</Strong>, <Strong>Python</Strong>, <Strong>Docker</Strong> and 
+        a few more.
       </Paragraph>
 
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'start']} ml={[0, null, null, null, 5]}>
