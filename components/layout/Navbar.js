@@ -35,10 +35,13 @@ export default function Navbar() {
           Contact
         </Button>
         <Button variant="ghost" mr={3} as="a" href="#about">
-          About me
+          About
         </Button>
         <Button variant="ghost" mr={3} as="a" href="#education">
           Education
+        </Button>
+        <Button variant="ghost" mr={3} as="a" href="#projects">
+          Projects
         </Button>
         <Button variant="ghost" mr={3} as="a" href="#work">
           Work
