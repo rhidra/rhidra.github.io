@@ -8,16 +8,26 @@ import WorkSection from "./WorkSection";
 
 export function WorkOthers() {
   const [selected, setSelected] = useState();
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   const iconList = [
     'img/kerlead/cover.png',
     'img/mastermined/logo.png',
     'img/rnd4impact/icon.png',
-  ]
+  ];
+
+  function select(idx) {
+    if (isCollapsed) {
+      setIsCollapsed(false);
+    } else if (selected === idx) {
+      setIsCollapsed(true);
+    }
+    setSelected(idx);
+  }
 
   return (
     <div className="work-others">
-      <section className={`collapsible ${selected === undefined ? 'collapsed' : ''}`}>
+      <section className={`collapsible ${isCollapsed ? 'collapsed' : ''}`}>
         {selected === 0 &&
           <MainSection
             title="Kerlead: CRM Mobile App"
@@ -116,7 +126,7 @@ export function WorkOthers() {
 
       <div className="cards-wrapper">
         {iconList.map((icon, idx) => (
-          <CardButton img={icon} onClick={() => setSelected(s => s === idx ? undefined : idx)} key={idx} isSelected={selected === idx}/>
+          <CardButton img={icon} onClick={() => select(idx)} key={idx} isSelected={!isCollapsed && selected === idx}/>
         ))}
       </div>
     </div>
