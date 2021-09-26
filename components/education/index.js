@@ -14,7 +14,7 @@ export default function Education() {
     </EducationRow>
 
     <EducationRow
-      degree={['Master\'s degree', 'Telecommunications engineer']}
+      degree={['Master\'s degree', 'Telecommunications']}
       year={['2015', '2020']}
       title="INSA Lyon"
       ml={[0, 0, 10, 40, 48]}

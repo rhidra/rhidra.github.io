@@ -13,7 +13,7 @@ export default function EducationRow({children, title, year, degree, ...props}) 
       py={3}
       pl={[0, 0, 3]}
       {...props}>
-      <Heading as="h4" color="grey.300" fontSize="md">
+      <Heading as="h4" color="grey.300" fontSize={['sm', 'md']}>
         <Degree degree={degree}/>
       </Heading>
       
