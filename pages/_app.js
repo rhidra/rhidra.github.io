@@ -26,8 +26,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="google-site-verification" content="zhO_vjy3H84BJz-sXTCFRv7e2gf0y1GX5ojB0KA0PYw" />
 
         {/* Social sharing */}
-        <meta property="og:title" content="Rémy Hidra // Freelance Web Developer"/>
-        <meta property="og:site_name" content="Rémy Hidra // Freelance Web Developer"/>
+        <meta property="og:title" content="Rémy Hidra // Software Engineer"/>
+        <meta property="og:site_name" content="Rémy Hidra // Software Engineer"/>
         <meta property="og:description" content="I am Rémy Hidra, a french software engineer. This is my portfolio. Take a look at my projects !"/>
         <meta property="og:image" content="https://remyhidra.dev/banner.png"/>
         <meta property="og:url" content="https://remyhidra.dev"/>
