@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="Rémy Hidra // Freelance Web Developer"/>
         <meta property="og:site_name" content="Rémy Hidra // Freelance Web Developer"/>
         <meta property="og:description" content="I am Rémy Hidra, a french software engineer. This is my portfolio. Take a look at my projects !"/>
-        <meta property="og:image" content="https://remyhidra.dev/favicon.png"/>
+        <meta property="og:image" content="https://remyhidra.dev/banner.png"/>
         <meta property="og:url" content="https://remyhidra.dev"/>
         <meta property="og:type" content="website"/> 
         <meta name="twitter:card" content="summary"/>
