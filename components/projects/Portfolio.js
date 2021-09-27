@@ -15,7 +15,7 @@ export default function Portfolio() {
                   label: 'NextJS',
                 }]}
                 source="https://github.com/rhidra/rhidra.github.io"
-                link="https://rhidra.github.io">
+                link="https://remyhidra.dev">
       A simple portfolio made with React, NextJS and Chakra UI.
       The goal was to design a good looking app from scratch, without any template or
       strong external reference. The interface should also be SEO optimized and quickly

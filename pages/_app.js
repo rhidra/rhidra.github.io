@@ -28,8 +28,8 @@ function MyApp({ Component, pageProps }) {
         {/* Social sharing */}
         <meta property="og:title" content="Rémy Hidra // Freelance Web Developer"/>
         <meta property="og:description" content="I am Rémy, a full-stack Web developer. Let's build an app together !"/>
-        <meta property="og:image" content="https://rhidra.github.io/favicon.png"/>
-        <meta property="og:url" content="https://rhidra.github.io"/>
+        <meta property="og:image" content="https://remyhidra.dev/favicon.png"/>
+        <meta property="og:url" content="https://remyhidra.dev"/>
         <meta property="og:type" content="website"/> 
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:site" content="rehidra"/>

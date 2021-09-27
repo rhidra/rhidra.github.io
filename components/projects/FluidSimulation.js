@@ -21,7 +21,7 @@ export default function FluidSimulation() {
                   label: 'Webpack',
                 }]}
                 source="https://github.com/rhidra/fluid-simulation"
-                link="https://rhidra.github.io/fluid-simulation">
+                link="https://fluid.remyhidra.dev">
       A fun experiment between fluid mechanics and generative art. To make the 
       program run in real-time at full resolution, I had to make all the computations
       run on the client GPU, using the native WebGL API. I implemented the algorithm

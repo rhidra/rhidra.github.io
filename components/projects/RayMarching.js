@@ -21,7 +21,7 @@ export default function RayMarching() {
                   label: 'Webpack',
                 }]}
                 source="https://github.com/rhidra/ray-marching"
-                link="https://rhidra.github.io/ray-marching">
+                link="https://raymarching.remyhidra.dev/">
       <strong>This live demo does not work with touch screens and mobile devices.</strong><br/>
       A fun project to try building a procedurally generated 3D environment, using as few libraries as possible.
       Using WebGL, I built a small ray marching renderer. After experimenting with various scenes and 2D fractals,
