@@ -180,6 +180,29 @@ section.work {
           display: block;
         }
       }
+
+      .buttons {
+        margin-top: 1rem;
+
+        a {
+          padding: .75rem 1rem;
+          cursor: pointer;
+          border-radius: 6px;
+          margin-right: 1rem;
+          transition: all linear 150ms;
+          font-size: 1rem;
+
+          &:hover {
+            background: $grey3;
+            color: $purple6;
+          }
+
+          svg {
+            position: relative;
+            bottom: 2px;
+          }
+        }
+      }
     }
 
     .tech-wrapper {

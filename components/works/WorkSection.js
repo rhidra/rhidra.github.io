@@ -1,4 +1,4 @@
-import { Icon, Image } from "@chakra-ui/core";
+import { Button, Icon, Image } from "@chakra-ui/core";
 import { useEffect, useState } from "react";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -32,20 +32,6 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
             </h4>
             <h3 className="title">{title}</h3>
           </div>
-          
-          <div>
-            {link &&
-              <a className="external-link" href={link} target="_blank">
-                <Icon as={FaExternalLinkAlt} boxSize={5}/>&nbsp;
-              </a>
-            }
-
-            {src &&
-              <a className="external-link" href={src} target="_blank">
-                <Icon as={FaCode} boxSize={5}/>&nbsp;
-              </a>
-            }
-          </div>
         </div>
 
 
@@ -56,7 +42,28 @@ export default function WorkSection({subtitle, title, children, isRight, icons, 
             {shortText}
             <br/><button className="ellipsis" onClick={() => setIsTruncated(false)}>Show more</button>
           </>}
-          {!isTruncated && longText}
+          {!isTruncated && 
+          <>
+            {longText}
+            
+            {(src || link) &&
+              <div className="buttons">
+                {src &&
+                  <a href={src} target="_blank">
+                    <Icon as={FaCode} boxSize={5} opacity={.8}/>&nbsp;
+                    Source
+                  </a>
+                }
+                {link &&
+                  <a href={link} target="_blank">
+                    <Icon as={FaExternalLinkAlt} boxSize={5} opacity={.8}/>&nbsp;
+                    Link
+                  </a>
+                }
+              </div>
+            }
+          </>
+          }
 
           {logo &&
             <img className="bg-img" src={logo} alt="logo"/>
