@@ -5,13 +5,14 @@ export function About() {
   return (
     <SimpleGrid columns={[1, 1, 2]} mb={12} justifyItems="center">
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
-        I am Rémy, a <Strong>software engineer</Strong>, who graduated from a Masters degree in Telecommunications 
-        and Navigation Systems at <Strong>Shanghai Jiao Tong University</Strong> and <Strong>INSA Lyon</Strong>.
+        I am Rémy, a <Strong>software engineer</Strong>, who graduated from Masters degrees in Telecommunications 
+        and Computer Science at the <Strong>Shanghai Jiao Tong University</Strong> and <Strong>INSA Lyon</Strong>.
+        I gained a strong fullstack web experience through freelancing and building my own startup.
       </Paragraph>
       
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'start']} ml={[0, null, null, null, 5]}>
-        Used to working in an <Strong>Agile environment</Strong>, I value including my client directly in the development process.
-        In order to make the most efficient software as possible, I always communicate with everyone in the team.
+        Used to work in an <Strong>Agile environment</Strong>, I value communicating with everyone in the team.
+        A team with strong communication skills can acheive more than an efficient engineer.
       </Paragraph>
 
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
