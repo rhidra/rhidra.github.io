@@ -72,7 +72,7 @@ export default function Home() {
           <RayMarching/>
 
           <Link href="/projects">
-            <Button colorScheme="gray" cursor="pointer" className="btn" variant="outline" mr={3} as="span" href="">
+            <Button colorScheme="gray" cursor="pointer" className="btn" variant="outline" as="span" href="">
               More projects !
             </Button>
           </Link>
@@ -97,6 +97,14 @@ export default function Home() {
         </Heading>
 
         <About/>
+
+        <Flex justifyContent="center">
+          <a href="/cv.pdf" download="Resume - Remy Hidra">
+            <Button colorScheme="gray" cursor="pointer" className="btn" variant="outline" as="span" href="">
+              Check out my resume !
+            </Button>
+          </a>
+        </Flex>
 
         <Flex justify="center" id="contact">
           <Divider opacity="1" w="100px" mb={[10, 12]} mt={[6, 12]} borderBottomWidth="3px" borderTopWidth="3px" borderRadius="20px" borderColor="red.600"/>
