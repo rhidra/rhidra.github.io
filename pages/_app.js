@@ -2,10 +2,6 @@ import '../styles/global.scss';
 import { ChakraProvider } from '@chakra-ui/core';
 import Head from 'next/head';
 import theme from '../styles/theme';
-import ReactGA from 'react-ga';
-
-const TRACKING_ID = "G-1GLSHJY89E";
-ReactGA.initialize(TRACKING_ID);
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -38,6 +34,16 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website"/> 
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:site" content="rehidra"/>
+
+        {/* Google analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GLSHJY89E"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-1GLSHJY89E');
+        </script>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
