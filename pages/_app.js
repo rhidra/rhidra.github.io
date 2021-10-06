@@ -38,13 +38,15 @@ function MyApp({ Component, pageProps }) {
         {/* Google analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GLSHJY89E"></script>
         <script>
+          {`
           window.dataLayer = window.dataLayer || [];
-          function gtag() {'{'}
+          function gtag() {
             dataLayer.push(arguments);
-          {'}'}
+          }
           gtag('js', new Date());
 
           gtag('config', 'G-1GLSHJY89E');
+          `}
         </script>
       </Head>
       <Component {...pageProps} />
