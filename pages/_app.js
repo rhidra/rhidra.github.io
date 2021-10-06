@@ -2,6 +2,10 @@ import '../styles/global.scss';
 import { ChakraProvider } from '@chakra-ui/core';
 import Head from 'next/head';
 import theme from '../styles/theme';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-1GLSHJY89E";
+ReactGA.initialize(TRACKING_ID);
 
 function MyApp({ Component, pageProps }) {
   return (
