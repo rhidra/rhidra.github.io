@@ -26,7 +26,8 @@ export default function FluidSimulation() {
       program run in real-time at full resolution, I had to make all the computations
       run on the client GPU, using the native WebGL API. I implemented the algorithm
       on sequential shaders operations. To make the app as light as possible,
-      only vanilla JS was used, compiled from Typescript using a small Webpack configuration.
+      only vanilla JS was used, compiled from Typescript using a small Webpack configuration.<br/>
+      After sharing the project, it gathered around <strong>+30K unique users</strong>.
     </ProjectCard>
   );
 }
