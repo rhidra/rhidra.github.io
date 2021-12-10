@@ -38,7 +38,7 @@ export default function Header() {
 
                 <Text as="span" display={['block', 'block', 'inline']} mb={4}>
                   <Strong m={[2, 4]} color="red.500">//</Strong>
-                  &nbsp;Freelance&nbsp;
+                  &nbsp;Fullstack&nbsp;
                   <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'inline', 'none']}>//</Strong>
                 </Text>
               </Text>
@@ -51,7 +51,7 @@ export default function Header() {
             <Text maxW="50ch" color="rgba(74, 72, 67, 0.93)">
               With a Master of Research in Robotics and a strong web freelance experience, 
               I build creative software focused on design and user experience.<br/>
-              <strong>Currently looking for a job anywhere in the world.</strong>
+              <strong>Currently employed in Alten Canada.</strong>
             </Text>
           </Flex>
         </Flex>
