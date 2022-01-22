@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://remyhidra.dev"/>
         <meta property="og:type" content="website"/> 
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="rehidra"/>
+        <meta name="twitter:site" content="remyhidra"/>
 
         {/* Google analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GLSHJY89E"></script>
