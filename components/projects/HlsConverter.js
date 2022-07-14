@@ -24,7 +24,7 @@ export default function HlsConverter() {
                   label: 'Docker',
                 }]}
                 source="https://github.com/rhidra/hls-converter-api"
-                link="https://hls-converter.com">
+                link="https://hls-converter.remyhidra.dev">
       A small experiment to try to monetize the video encoding module of Clapback.
       HLS is a video streaming protocol allowing adaptive bitrate live and VOD streaming.
       But few resources exists on how to create a video streaming HLS pipeline.
