@@ -51,7 +51,7 @@ export default function Header() {
             <Text maxW="50ch" color="rgba(74, 72, 67, 0.93)">
               With a Master of Research in Robotics and a strong web freelance experience, 
               I build creative software focused on design and user experience.<br/>
-              <strong>Currently employed in Alten Canada.</strong>
+              <strong>Currently working at Morgan Stanley, in Montréal, QC 🇨🇦</strong>
             </Text>
           </Flex>
         </Flex>
