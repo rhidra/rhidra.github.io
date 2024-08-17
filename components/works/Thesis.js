@@ -12,7 +12,7 @@ export function Thesis({addMargin}) {
       img="img/thesis/demo.gif"
       src="https://github.com/rhidra/autopilot"
       link="https://github.com/rhidra/autopilot/raw/master/Thesis.pdf"
-      isRight={true}
+      isRight={false}
       imgSize={400}
       addMargin={addMargin}
       icons={[{

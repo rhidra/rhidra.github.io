@@ -17,6 +17,7 @@ import { Nestaur } from '../components/works/Nestaur';
 import { Thesis } from '../components/works/Thesis';
 import { WorkOthers } from '../components/works/WorkOthers';
 import { About } from '../components/About';
+import { MorganStanley } from '../components/works/MorganStanley';
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
         </Heading>
 
         <Flex flexDir="column" alignItems="center">
+          <MorganStanley addMargin={true}/>
           <Clapback addMargin={true}/>
           <Nestaur addMargin={true}/>
           <Thesis/>

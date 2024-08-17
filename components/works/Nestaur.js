@@ -12,7 +12,7 @@ export function Nestaur({addMargin}) {
       imgSize={400}
       logo="img/nestaur/logo.png"
       link="https://nestaur.com"
-      isRight={false}
+      isRight={true}
       addMargin={addMargin}
       icons={[{
         icon: FaReact,

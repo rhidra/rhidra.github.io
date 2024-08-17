@@ -7,12 +7,12 @@ export function Clapback({addMargin}) {
   return (
     <WorkSection
       subtitle={['Startup CTO', 'Fullstack']}
-      title="Clapback: A new media app in China"
+      title="Clapback: A Chinese new media app"
       img="/img/clapback/demo.gif"
       logo="/img/clapback/icon.png"
       link="https://clapbacktheapp.com"
       src="https://github.com/rhidra/clapback-backend"
-      isRight={true}
+      isRight={false}
       imgSize={250}
       addMargin={addMargin}
       icons={[{
