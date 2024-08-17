@@ -5,14 +5,15 @@ export function About() {
   return (
     <SimpleGrid columns={[1, 1, 2]} mb={12} justifyItems="center">
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
-        I am Rémy, a <Strong>software engineer</Strong>, who graduated from Masters degrees in Telecommunications 
-        and Computer Science at the <Strong>Shanghai Jiao Tong University</Strong> and <Strong>INSA Lyon</Strong>.
-        I gained a strong fullstack web experience through freelancing and building my own startup.
+        I am Rémy, a <Strong>software engineer</Strong> at Morgan Stanley in Montréal QC, 
+        where I specialize in building robust financials systems & applications, for trading and risk analytics. 
+        My toolkit includes Java, Spring, KDB/Q, SQL, Perl, and Python. I thrive on developing applications that 
+        scale and perform under pressure, with a strong emphasis on robustness and reliability.
       </Paragraph>
       
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'start']} ml={[0, null, null, null, 5]}>
-        Used to work in an <Strong>Agile environment</Strong>, I value communicating with everyone in the team.
-        A team with strong communication skills can acheive more than an efficient engineer.
+        Beyond my current role, I've gained valuable <Strong>entrepreneurial experience</Strong>: from cofounding a startup as the Tech Lead in Shanghai, China, 
+        to enhancing frontends as a <Strong>freelance developer</Strong> in Lyon, France. 
       </Paragraph>
 
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'end']} mr={[0, null, null, null, 5]}>
@@ -25,10 +26,9 @@ export function About() {
       </Paragraph>
 
       <Paragraph textAlign={['left', null, 'justify']} justifySelf={['center', null, 'start']} ml={[0, null, null, null, 5]}>
-        Finally, my academic background gave me strong theoritical knowledge in <Strong>artificial intelligence</Strong>, <Strong>advanced
-        communication protocols</Strong> and <Strong>robot navigation</Strong>.
-        Not only do I appreciate learning new challenging topics, I believe some beauty can be found in creating elegant 
-        solutions to solve complex problems.
+        Academically, I fueled my passion for engineering and technology with a double Master's degree from Shanghai's <Strong>SJTU</Strong> and 
+        the <Strong>INSA Lyon</Strong>. This education provided me with solid knowledge in <Strong>networking</Strong>, 
+        <Strong>distributed computing</Strong>, <Strong>telecommunications</Strong>, <Strong>AI</Strong> and <Strong>robotics aerial navigation</Strong>.
       </Paragraph>
     </SimpleGrid>
   );
