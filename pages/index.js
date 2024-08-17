@@ -1,14 +1,12 @@
-import { Container, Flex, Heading, Box, SimpleGrid, Text, Divider, Button, Image } from '@chakra-ui/core';
+import { Container, Flex, Heading, Box, Divider, Button } from '@chakra-ui/core';
 import Link from 'next/link'
 import ContactForm from '../components/ContactForm';
 import Skills from '../components/skills';
 import Wave from '../components/Wave';
 import Navbar from '../components/layout/Navbar';
 import Header from '../components/layout/Header';
-import { Paragraph, Strong } from "../components/typography";
 import Footer from '../components/layout/Footer';
 import Education from '../components/education';
-import Mouette from '../components/projects/Mouette';
 import FluidSimulation from '../components/projects/FluidSimulation';
 import RayMarching from '../components/projects/RayMarching';
 import HlsConverter from '../components/projects/HlsConverter';

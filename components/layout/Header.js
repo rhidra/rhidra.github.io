@@ -32,26 +32,26 @@ export default function Header() {
               <Text as="span" display={['inline', 'inline', 'block', 'inline']} mb={4}>
                 <Text as="span" display={['block', 'block', 'inline']} mb={4}>
                   <Strong mr={[2, 4]} color="red.500">//</Strong>
-                  &nbsp;French&nbsp;
+                  &nbsp;Fullstack&nbsp;
                   <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'none']}>//</Strong>
                 </Text>
 
                 <Text as="span" display={['block', 'block', 'inline']} mb={4}>
                   <Strong m={[2, 4]} color="red.500">//</Strong>
-                  &nbsp;Fullstack&nbsp;
+                  &nbsp;French&nbsp;
                   <Strong m={[2, 4]} color="red.500" display={['inline', 'inline', 'inline', 'none']}>//</Strong>
                 </Text>
               </Text>
               
-              <Strong mr={[2, 4]} ml={[0, 0, 0, 4]} color="red.500">//</Strong>
+              <Strong mr={[2, 4]} ml={[0, 0, 0, 4]} mb={4} color="red.500">//</Strong>
               &nbsp;Software Engineer&nbsp;
               <Strong m={[2, 4]} color="red.500">//</Strong>
             </Text>
 
             <Text maxW="50ch" color="rgba(74, 72, 67, 0.93)">
-              With a Master of Research in Robotics and a strong web freelance experience, 
-              I build creative software focused on design and user experience.<br/>
-              <strong>Currently working at Morgan Stanley, in Montréal, QC 🇨🇦</strong>
+              With a strong academic background,
+              I build high-performance financial systems, optimizing on robustness and user experience.<br/>
+              <strong>Currently innovating on Agency MBS Trading Systems at Morgan Stanley, in Montréal, QC 🇨🇦</strong>
             </Text>
           </Flex>
         </Flex>
